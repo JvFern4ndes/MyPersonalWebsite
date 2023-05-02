@@ -17,6 +17,9 @@
         "react"
     ],
     "rules": {
+      "react/jsx-filename-extension": [
+        1, { "extension": [".js", ".jsx"] }
+      ],
       "import/extensions": [
         "error",
         "ignorePackages",
@@ -24,7 +27,9 @@
           "jsx": "always"
         }
       ],
-      "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+      "no-unused-vars": [
+        "error", { "argsIgnorePattern": "next" }
+      ],
       "react/react-in-jsx-scope": "off",
       "indent": [
         "error",

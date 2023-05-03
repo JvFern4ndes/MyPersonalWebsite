@@ -1,8 +1,7 @@
-import { Container } from "./styles";
+import { Container } from './styles';
 
-
-export default function Header () {
+export default function Header() {
   return (
     <Container>Olá Mundo!</Container>
-  )
+  );
 }

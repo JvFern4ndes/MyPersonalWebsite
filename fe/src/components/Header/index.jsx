@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 
-import { Container } from './styles';
+import {
+  Container, LeftSide, RightSide, RightSideContent,
+} from './styles';
+
+import ReactIcon from '../../assets/images/ReactIcon.svg';
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,7 +23,17 @@ export default function Header() {
       className={`header ${isMobile ? 'header--mobile' : ''}`}
       isMobile={isMobile}
     >
-      Olá Mundo!
+      <LeftSide>
+        <img src={ReactIcon} alt="React Icon" style={{ width: '64px', height: '64px' }} />
+        João Victor
+      </LeftSide>
+      <RightSide>
+        <RightSideContent>Sobre</RightSideContent>
+        <RightSideContent>Portfólio</RightSideContent>
+        <RightSideContent>Habilidades</RightSideContent>
+        <RightSideContent>Experiência</RightSideContent>
+        <RightSideContent>Contato</RightSideContent>
+      </RightSide>
     </Container>
   );
 }

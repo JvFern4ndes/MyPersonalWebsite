@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.header`
   background: transparent;
   padding: 8px;
   display: flex;
@@ -29,6 +29,7 @@ export const RightSide = styled.div`
   align-items: center;
   gap: 32px;
 `;
-export const RightSideContent = styled.div`
-  cursor: pointer;
+export const RightSideContent = styled.button`
+  background: transparent;
+  padding: 8px;
 `;

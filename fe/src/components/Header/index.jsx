@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import {
+  ButtonText,
   Container, LeftSide, RightSide, RightSideContent,
 } from './styles';
 
@@ -23,16 +24,29 @@ export default function Header() {
       className={`header ${isMobile ? 'header--mobile' : ''}`}
       isMobile={isMobile}
     >
-      <LeftSide>
-        <img src={ReactIcon} alt="React Icon" style={{ width: '64px', height: '64px' }} />
+      <LeftSide
+        className={`header ${isMobile ? 'header--mobile' : ''}`}
+        isMobile={isMobile}
+      >
+        <img src={ReactIcon} alt="React Icon" />
         João Victor
       </LeftSide>
       <RightSide>
-        <RightSideContent>Sobre</RightSideContent>
-        <RightSideContent>Portfólio</RightSideContent>
-        <RightSideContent>Habilidades</RightSideContent>
-        <RightSideContent>Experiência</RightSideContent>
-        <RightSideContent>Contato</RightSideContent>
+        <RightSideContent>
+          <ButtonText>About</ButtonText>
+        </RightSideContent>
+        <RightSideContent>
+          <ButtonText>Portfolio</ButtonText>
+        </RightSideContent>
+        <RightSideContent>
+          <ButtonText>Skills</ButtonText>
+        </RightSideContent>
+        <RightSideContent>
+          <ButtonText>Experience</ButtonText>
+        </RightSideContent>
+        <RightSideContent>
+          <ButtonText>Contact</ButtonText>
+        </RightSideContent>
       </RightSide>
     </Container>
   );

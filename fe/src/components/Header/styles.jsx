@@ -5,80 +5,69 @@ export const Container = styled.header`
   padding: 8px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #343a49;
-
-  ${(props) => props.isMobile && `
-    @media (max-width: 768px) {
-      height: 6em;
-      font-size: 8px;
-      gap: 16px;
-    }
-  `}
 `;
 
 export const LeftSide = styled.div`
   font-size: 24px;
   font-weight: bold;
-  display: flex;
+  position: relative;
+  display: inline-block;
   align-items: center;
   gap: 16px;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 
   img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
   }
 
   :hover {
     transform: scale(1.2);
   }
-
-  ${(props) => props.isMobile && `
-    @media (max-width: 768px) {
-      font-size: 16px;
-
-      img {
-        width: 48px;
-        height: 48px;
-      }
-    }
-  `}
 `;
 
 export const RightSide = styled.div`
   display: flex;
+  position: relative;
   align-items: center;
 `;
 
-export const RightSideContent = styled.div`
-  :not(:last-child) {
-    border-right: 1px solid #343a49;
-  }
-
-
+export const ButtonNumber = styled.div`
+  color: ${({ theme }) => theme.secondaryColor};
+  margin-right: 4px;
 `;
 
 export const ButtonText = styled.button`
   background: transparent;
   color: ${({ theme }) => theme.color};
-  font-weight: 500;
+  font-weight: 700;
   border: none;
   margin: 8px 32px;
+  display: flex;
   transition: color 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 
   :hover {
-    color: #5ed3f3;
+    color: ${({ theme }) => theme.secondaryColor};
     transform: scale(1.2);
   }
+`;
 
-  // Falta passar essa prop para o index;
-  ${(props) => props.isMobile && `
-    @media (max-width: 768px) {
-      font-size: 12px;
-      margin: 8px;
-      font-weight: 400;
-    }
-  `}
+export const ResumeButton = styled.button`
+  background: transparent;
+  margin: 8px 16px;
+  padding: 8px 16px;
+  color: ${({ theme }) => theme.secondaryColor};
+  border: 1px solid ${({ theme }) => theme.secondaryColor};
+  border-radius: 8px;
+  transition: color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+
+  :hover {
+    background: ${({ theme }) => theme.secondaryColor};
+    border: ${({ theme }) => theme.backgroundColor};
+    color: ${({ theme }) => theme.backgroundColor};
+    transform: scale(1.2);
+  }
 `;

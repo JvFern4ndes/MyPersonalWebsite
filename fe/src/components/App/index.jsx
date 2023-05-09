@@ -7,12 +7,6 @@ import { Container } from './styles';
 
 import Header from '../Header';
 
-export const theme = {
-  mediaQueries: {
-    tablet: '@media screen and (max-width: 767px)',
-  },
-};
-
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>

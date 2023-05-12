@@ -11,7 +11,7 @@ export const LeftSide = styled.div`
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  display: inline-block;
+  display: flex;
   align-items: center;
   gap: 16px;
   transition: transform 0.3s ease-in-out;
@@ -24,6 +24,22 @@ export const LeftSide = styled.div`
 
   :hover {
     transform: scale(1.2);
+  }
+`;
+
+export const LeftText = styled.div`
+  animation: enter-text 1s ease-out;
+  opacity: 0;
+
+  @keyframes enter-text {
+    from {
+      transform: translateX(-60px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 `;
 

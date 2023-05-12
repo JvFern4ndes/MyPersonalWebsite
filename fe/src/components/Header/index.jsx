@@ -1,16 +1,26 @@
+import { useState } from 'react';
 import {
   ButtonNumber,
   ButtonText,
-  Container, LeftSide, ResumeButton, RightSide,
+  Container, LeftSide, LeftText, ResumeButton, RightSide,
 } from './styles';
 
 import MyLogo from '../../assets/images/MyLogo.svg';
 
 export default function Header() {
+  const [isMouseOver, setIsMouseOver] = useState(false);
+
   return (
     <Container>
-      <LeftSide>
+      <LeftSide
+        onMouseEnter={() => setIsMouseOver(true)}
+        onMouseLeave={() => setIsMouseOver(false)}
+        style={{ display: 'flex', alignItems: 'center' }}
+      >
         <img src={MyLogo} alt="React Icon" />
+        {isMouseOver && (
+          <LeftText>João Victor</LeftText>
+        )}
       </LeftSide>
       <RightSide>
         <ButtonText>

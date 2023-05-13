@@ -18,9 +18,7 @@ export default function Header() {
         style={{ display: 'flex', alignItems: 'center' }}
       >
         <img src={MyLogo} alt="React Icon" />
-        {isMouseOver && (
-          <LeftText>João Victor</LeftText>
-        )}
+        <LeftText className={isMouseOver ? 'entrada' : 'saida'}>João Victor</LeftText>
       </LeftSide>
       <RightSide>
         <ButtonText>

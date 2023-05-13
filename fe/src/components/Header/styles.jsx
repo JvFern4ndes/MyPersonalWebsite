@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.header`
   background: transparent;
@@ -14,7 +14,7 @@ export const LeftSide = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
   cursor: pointer;
 
   img {
@@ -27,19 +27,37 @@ export const LeftSide = styled.div`
   }
 `;
 
+const enterText = keyframes`
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
+const textLeave = keyframes`
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+`;
+
 export const LeftText = styled.div`
-  animation: enter-text 1s ease-out;
   opacity: 0;
 
-  @keyframes enter-text {
-    from {
-      transform: translateX(-60px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  &.entrada {
+    animation: ${enterText} 1s ease-out forwards;
+  }
+
+  &.saida {
+    animation: ${textLeave} 1s ease-in forwards;
   }
 `;
 

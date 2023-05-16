@@ -72,7 +72,7 @@ export const ButtonNumber = styled.div`
   margin-right: 4px;
 `;
 
-export const ButtonText = styled.button`
+export const HeaderButton = styled.button`
   background: transparent;
   color: ${({ theme }) => theme.color};
   font-weight: 700;

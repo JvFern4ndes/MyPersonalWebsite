@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {
   ButtonNumber,
-  ButtonText,
+  HeaderButton,
   Container, LeftSide, LeftText, ResumeButton, RightSide,
 } from './styles';
 
@@ -21,23 +21,23 @@ export default function Header() {
         <LeftText className={isMouseOver ? 'entrada' : 'saida'}>João Victor</LeftText>
       </LeftSide>
       <RightSide>
-        <ButtonText>
+        <HeaderButton type="button">
           <ButtonNumber>01.</ButtonNumber>
           About
-        </ButtonText>
-        <ButtonText>
+        </HeaderButton>
+        <HeaderButton type="button">
           <ButtonNumber>03.</ButtonNumber>
           Experience
-        </ButtonText>
-        <ButtonText>
+        </HeaderButton>
+        <HeaderButton type="button">
           <ButtonNumber>02.</ButtonNumber>
           Portfolio
-        </ButtonText>
-        <ButtonText>
+        </HeaderButton>
+        <HeaderButton type="button">
           <ButtonNumber>04.</ButtonNumber>
           Contact
-        </ButtonText>
-        <ResumeButton>Resume</ResumeButton>
+        </HeaderButton>
+        <ResumeButton type="button">Resume</ResumeButton>
       </RightSide>
     </Container>
   );

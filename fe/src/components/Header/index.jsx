@@ -1,4 +1,7 @@
 import { useState } from 'react';
+
+import { Link } from 'react-router-dom';
+
 import {
   ButtonNumber,
   HeaderButton,
@@ -17,27 +20,39 @@ export default function Header() {
         onMouseLeave={() => setIsMouseOver(false)}
         style={{ display: 'flex', alignItems: 'center' }}
       >
-        <img src={MyLogo} alt="React Icon" />
+        <Link to="/">
+          <img src={MyLogo} alt="React Icon" />
+        </Link>
         <LeftText className={isMouseOver ? 'entrada' : 'saida'}>João Victor</LeftText>
       </LeftSide>
       <RightSide>
-        <HeaderButton type="button">
-          <ButtonNumber>01.</ButtonNumber>
-          About
-        </HeaderButton>
-        <HeaderButton type="button">
-          <ButtonNumber>03.</ButtonNumber>
-          Experience
-        </HeaderButton>
-        <HeaderButton type="button">
-          <ButtonNumber>02.</ButtonNumber>
-          Portfolio
-        </HeaderButton>
-        <HeaderButton type="button">
-          <ButtonNumber>04.</ButtonNumber>
-          Contact
-        </HeaderButton>
-        <ResumeButton type="button">Resume</ResumeButton>
+        <Link to="/about" style={{ textDecoration: 'none' }}>
+          <HeaderButton type="button">
+            <ButtonNumber>01.</ButtonNumber>
+            About
+          </HeaderButton>
+        </Link>
+        <Link to="/experience" style={{ textDecoration: 'none' }}>
+          <HeaderButton type="button">
+            <ButtonNumber>02.</ButtonNumber>
+            Experience
+          </HeaderButton>
+        </Link>
+        <Link to="portfolio" style={{ textDecoration: 'none' }}>
+          <HeaderButton type="button">
+            <ButtonNumber>03.</ButtonNumber>
+            Portfolio
+          </HeaderButton>
+        </Link>
+        <Link to="contact" style={{ textDecoration: 'none' }}>
+          <HeaderButton type="button">
+            <ButtonNumber>04.</ButtonNumber>
+            Contact
+          </HeaderButton>
+        </Link>
+        <Link to="resume" style={{ textDecoration: 'none' }}>
+          <ResumeButton type="button">Resume</ResumeButton>
+        </Link>
       </RightSide>
     </Container>
   );

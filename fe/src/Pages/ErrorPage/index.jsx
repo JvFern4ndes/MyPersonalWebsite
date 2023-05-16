@@ -1,8 +1,11 @@
-import { Link, useRouteError } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { Container, HomeButton } from './styles';
+
+import { Link, useRouteError } from 'react-router-dom';
+
 import GlobalStyles from '../../assets/styles/global';
 import DefaultTheme from '../../assets/styles/themes/default';
+
+import { Container, HomeButton } from './styles';
 
 export default function ErrorPage() {
   const error = useRouteError();

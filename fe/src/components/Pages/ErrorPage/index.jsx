@@ -1,6 +1,6 @@
 import { useRouteError } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { Container } from './styles';
+import { Container, HomeButton } from './styles';
 import GlobalStyles from '../../../assets/styles/global';
 import DefaultTheme from '../../../assets/styles/themes/default';
 
@@ -17,6 +17,7 @@ export default function ErrorPage() {
         <p>
           <i>{error.statusText || error.message}</i>
         </p>
+        <HomeButton>Página Inicial</HomeButton>
       </Container>
     </ThemeProvider>
   );

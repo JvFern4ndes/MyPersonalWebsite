@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 import {
   ButtonNumber,
   HeaderButton,
-  Container, LeftSide, LeftText, ResumeButton, RightSide,
+  Container, LeftSide, LeftText, RightSide,
 } from './styles';
 
 import MyLogo from '../../assets/images/MyLogo.svg';
+import Button from '../Button';
 
 export default function Header() {
   const [isMouseOver, setIsMouseOver] = useState(false);
@@ -50,7 +51,7 @@ export default function Header() {
           </HeaderButton>
         </Link>
         <Link to="resume" style={{ textDecoration: 'none' }}>
-          <ResumeButton type="button">Resume</ResumeButton>
+          <Button>Resume</Button>
         </Link>
       </RightSide>
     </Container>

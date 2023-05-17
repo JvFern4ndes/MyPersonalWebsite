@@ -1,17 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  font-family: 'Source Code Pro', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   gap: 32px;
+
+  h1, p {
+    font-family: 'Source Code Pro', sans-serif;
+  }
 `;
 
 export const HomeButton = styled.button`
   font-family: 'Source Code Pro', sans-serif;
+  font-weight: bold;
   background: transparent;
   color: ${({ theme }) => theme.tertiaryColor};
   border: 1px solid ${({ theme }) => theme.tertiaryColor};

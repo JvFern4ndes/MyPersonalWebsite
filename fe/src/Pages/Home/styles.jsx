@@ -14,23 +14,22 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
 `;
 
 export const FirstText = styled.div`
+  font-family: 'Source Code Pro', sans-serif;
   color: ${({ theme }) => theme.tertiaryColor};
 `;
 
 export const Name = styled.div`
-  font-family: 'Inter', sans-serif;
   font-size: 64px;
   font-weight: bold;
   color: ${({ theme }) => theme.color};
   margin-top: 16px;
+  cursor: pointer;
 `;
 
 export const SecondText = styled.div`
-  font-family: 'Inter', sans-serif;
   font-size: 64px;
   font-weight: 600;
   color: ${({ theme }) => theme.secondaryColor};
@@ -41,4 +40,8 @@ export const ThirdText = styled.div`
   width: 100%;
   max-width: 40%;
   color: ${({ theme }) => theme.secondaryColor}
+`;
+
+export const ColorTexts = styled.span`
+  color: ${({ theme }) => theme.tertiaryColor}
 `;

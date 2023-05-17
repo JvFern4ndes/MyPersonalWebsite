@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  font-family: 'Source Code Pro', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +11,7 @@ export const Container = styled.div`
 `;
 
 export const HomeButton = styled.button`
+  font-family: 'Source Code Pro', sans-serif;
   background: transparent;
   color: ${({ theme }) => theme.tertiaryColor};
   border: 1px solid ${({ theme }) => theme.tertiaryColor};

@@ -6,6 +6,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', monospace;
+    line-height: 1.5;
   }
 
   body {

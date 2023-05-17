@@ -5,7 +5,7 @@ import GlobalStyles from '../../assets/styles/global';
 import defaultTheme from '../../assets/styles/themes/default';
 
 import {
-  Container, Content, FirstText, Name, SecondText, ThirdText,
+  Container, Content, FirstText, Name, SecondText, ThirdText, ColorTexts,
 } from './styles';
 import Header from '../../components/Header';
 
@@ -19,7 +19,28 @@ export default function Home() {
           <FirstText>Hi, my name is</FirstText>
           <Name>João Victor Fernandes.</Name>
           <SecondText>I develop things with javascript.</SecondText>
-          <ThirdText>I am a multiplatform software developer with skills in building (and occasionally designing) engaging digital experiences using JavaScript. Currently, my focus lies in front-end web and mobile development, although I have and plan to further expand my knowledge in back-end development.</ThirdText>
+          <ThirdText>
+            I am a
+            {' '}
+            <ColorTexts>multiplatform software developer</ColorTexts>
+            {' '}
+            with skills in building (and occasionally designing) engaging digital experiences using
+            {' '}
+            <ColorTexts>JavaScript</ColorTexts>
+            . Currently, my focus lies in
+            {' '}
+            <ColorTexts>front-end web</ColorTexts>
+            {' '}
+            and
+            {' '}
+            <ColorTexts>mobile</ColorTexts>
+            {' '}
+            development, although I have and plan to further expand my knowledge in
+            {' '}
+            <ColorTexts>back-end</ColorTexts>
+            {' '}
+            development.
+          </ThirdText>
         </Content>
       </Container>
     </ThemeProvider>

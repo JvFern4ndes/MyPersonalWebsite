@@ -18,7 +18,6 @@ export default function Header() {
       <LeftSide
         onMouseEnter={() => setIsMouseOver(true)}
         onMouseLeave={() => setIsMouseOver(false)}
-        style={{ display: 'flex', alignItems: 'center' }}
       >
         <Link to="/">
           <img src={MyLogo} alt="React Icon" />

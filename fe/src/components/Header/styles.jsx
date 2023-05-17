@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.header`
   background: transparent;
-  padding: 8px;
+  padding: 32px 8px 0px 8px;
   display: flex;
   justify-content: space-between;
 `;
@@ -18,8 +18,8 @@ export const LeftSide = styled.div`
   cursor: pointer;
 
   img {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
   }
 
   :hover {
@@ -50,6 +50,7 @@ const textLeave = keyframes`
 `;
 
 export const LeftText = styled.div`
+  font-family: 'Source Code Pro', sans-serif;
   opacity: 0;
 
   &.entrada {
@@ -68,14 +69,15 @@ export const RightSide = styled.div`
 `;
 
 export const ButtonNumber = styled.div`
-  color: ${({ theme }) => theme.secondaryColor};
+  color: ${({ theme }) => theme.tertiaryColor};
   margin-right: 4px;
 `;
 
 export const HeaderButton = styled.button`
   background: transparent;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 600;
   color: ${({ theme }) => theme.color};
-  font-weight: 700;
   border: none;
   margin: 8px 32px;
   display: flex;
@@ -83,15 +85,17 @@ export const HeaderButton = styled.button`
   transition: transform 0.3s ease-in-out;
 
   :hover {
-    color: ${({ theme }) => theme.secondaryColor};
+    color: ${({ theme }) => theme.tertiaryColor};
     transform: scale(1.2);
   }
 `;
 
 export const ResumeButton = styled.button`
   background: transparent;
-  color: ${({ theme }) => theme.secondaryColor};
-  border: 1px solid ${({ theme }) => theme.secondaryColor};
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: bold;
+  color: ${({ theme }) => theme.tertiaryColor};
+  border: 1px solid ${({ theme }) => theme.tertiaryColor};
   margin: 8px 16px;
   padding: 16px 32px;
   border-radius: 8px;
@@ -99,7 +103,7 @@ export const ResumeButton = styled.button`
   transition: transform 0.3s ease-in-out;
 
   :hover {
-    background: ${({ theme }) => theme.secondaryColor};
+    background: ${({ theme }) => theme.tertiaryColor};
     border: 1px solid ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.backgroundColor};
     transform: scale(1.2);

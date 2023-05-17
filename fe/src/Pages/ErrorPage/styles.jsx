@@ -11,8 +11,8 @@ export const Container = styled.div`
 
 export const HomeButton = styled.button`
   background: transparent;
-  color: ${({ theme }) => theme.secondaryColor};
-  border: 1px solid ${({ theme }) => theme.secondaryColor};
+  color: ${({ theme }) => theme.tertiaryColor};
+  border: 1px solid ${({ theme }) => theme.tertiaryColor};
   margin: 8px 16px;
   padding: 16px 32px;
   border-radius: 8px;
@@ -20,7 +20,7 @@ export const HomeButton = styled.button`
   transition: transform 0.3s ease-in-out;
 
   :hover {
-    background: ${({ theme }) => theme.secondaryColor};
+    background: ${({ theme }) => theme.tertiaryColor};
     border: 1px solid ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.backgroundColor};
     transform: scale(1.2);

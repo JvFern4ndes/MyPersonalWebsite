@@ -8,6 +8,7 @@ import {
   Container, Content, FirstText, Name, SecondText, ThirdText, ColorTexts,
 } from './styles';
 import Header from '../../components/Header';
+import Button from '../../components/Button';
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
             {' '}
             development.
           </ThirdText>
+          <Button>Get In Touch</Button>
         </Content>
       </Container>
     </ThemeProvider>

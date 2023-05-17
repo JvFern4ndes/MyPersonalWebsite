@@ -39,7 +39,8 @@ export const SecondText = styled.div`
 export const ThirdText = styled.div`
   width: 100%;
   max-width: 40%;
-  color: ${({ theme }) => theme.secondaryColor}
+  color: ${({ theme }) => theme.secondaryColor};
+  margin-bottom: 40px;
 `;
 
 export const ColorTexts = styled.span`

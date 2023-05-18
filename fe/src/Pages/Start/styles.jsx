@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   margin-left: 10%;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ export const Name = styled.div`
   font-size: 64px;
   font-weight: bold;
   color: ${({ theme }) => theme.color};
-  margin-top: 16px;
+  margin-top: 1%;
   cursor: pointer;
 `;
 
@@ -33,12 +33,12 @@ export const SecondText = styled.div`
   font-size: 64px;
   font-weight: 600;
   color: ${({ theme }) => theme.secondaryColor};
-  margin-bottom: 16px;
+  margin-bottom: 1%;
 `;
 
 export const ThirdText = styled.div`
   width: 100%;
   max-width: 40%;
   color: ${({ theme }) => theme.secondaryColor};
-  margin-bottom: 40px;
+  margin-bottom: 3%;
 `;

@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   margin-left: 10%;
   display: flex;
   flex-direction: column;
@@ -41,8 +41,4 @@ export const ThirdText = styled.div`
   max-width: 40%;
   color: ${({ theme }) => theme.secondaryColor};
   margin-bottom: 40px;
-`;
-
-export const ColorTexts = styled.span`
-  color: ${({ theme }) => theme.tertiaryColor}
 `;

@@ -4,6 +4,7 @@ import Global from '../../assets/styles/global';
 
 import Header from '../../components/Header';
 import Start from '../Start';
+import About from '../About';
 
 export default function Index() {
   return (
@@ -11,6 +12,7 @@ export default function Index() {
       <Global />
       <Header />
       <Start />
+      <About />
     </ThemeProvider>
   );
 }

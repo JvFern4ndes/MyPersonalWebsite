@@ -1,10 +1,12 @@
 /* eslint-disable max-len */
 import ColorSourceCodeProTexts from '../../components/ColorSourceCodeProTexts';
 import MyPhoto from '../../assets/images/MyPhoto.png';
+import DoubleChevron from '../../assets/images/DoubleChevron.svg';
 import {
   Border,
   ColorLayer,
-  Container, Content, Photo, Text, TextAndImage, Texts, Title,
+  Column,
+  Container, Content, IconAndText, Photo, Technologies, Text, TextAndImage, Texts, Title,
 } from './styles';
 
 export default function About() {
@@ -34,6 +36,36 @@ export default function About() {
             <Border />
           </Photo>
         </TextAndImage>
+        <Technologies>
+          <Column>
+            <IconAndText>
+              <img src={DoubleChevron} alt="arrow" />
+              JavaScript (ES6+)
+            </IconAndText>
+            <IconAndText>
+              <img src={DoubleChevron} alt="arrow" />
+              React
+            </IconAndText>
+            <IconAndText>
+              <img src={DoubleChevron} alt="arrow" />
+              React Native
+            </IconAndText>
+          </Column>
+          <Column>
+            <IconAndText>
+              <img src={DoubleChevron} alt="arrow" />
+              Express.js
+            </IconAndText>
+            <IconAndText>
+              <img src={DoubleChevron} alt="arrow" />
+              MongoDB
+            </IconAndText>
+            <IconAndText>
+              <img src={DoubleChevron} alt="arrow" />
+              WordPress
+            </IconAndText>
+          </Column>
+        </Technologies>
       </Content>
     </Container>
   );

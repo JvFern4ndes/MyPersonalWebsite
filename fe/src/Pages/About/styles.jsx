@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  height: 100vh;
+  height: 80vh;
   margin-left: 10%;
   display: flex;
   justify-content: center;
@@ -62,7 +62,7 @@ export const ColorLayer = styled.div`
   width: 100%;
   max-width: 100%;
   height: calc(100% - 6px);
-  background-color: #5ed3f3;
+  background-color: ${({ theme }) => theme.tertiaryColor};
   opacity: 0.3;
   transition: opacity 0.5s ease-in-out;
 
@@ -80,4 +80,25 @@ export const Border = styled.div`
   border: 4px solid ${({ theme }) => theme.tertiaryColor};
   border-radius: 4px;
   z-index: -1;
+`;
+
+export const Technologies = styled.div`
+  width: 40%;
+  display: flex;
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  img{
+    max-width: 10%;
+    margin-right: 10%;
+  }
+`;
+
+export const IconAndText = styled.div`
+  display: flex;
+  margin-bottom: 4%;
 `;

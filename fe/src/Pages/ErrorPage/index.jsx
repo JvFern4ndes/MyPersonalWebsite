@@ -9,7 +9,6 @@ import { Container, HomeButton } from './styles';
 
 export default function ErrorPage() {
   const error = useRouteError();
-  console.log(error);
 
   return (
     <ThemeProvider theme={DefaultTheme}>

@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.header`
   background: transparent;
-  padding: 32px 8px 0px 8px;
+  padding: 2% 10% 0;
   display: flex;
   justify-content: space-between;
 `;

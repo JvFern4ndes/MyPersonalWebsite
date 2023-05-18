@@ -16,3 +16,7 @@ export const Title = styled.div`
   font-family: 'Source Code Pro', sans-serif;
   font-size: 24px;
 `;
+
+export const Text = styled.div`
+  color: ${({ theme }) => theme.secondaryColor};
+`;

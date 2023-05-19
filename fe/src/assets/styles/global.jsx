@@ -14,6 +14,9 @@ export default createGlobalStyle`
     font-size: 16px;
     color: ${({ theme }) => theme.color};
     width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 
   button {

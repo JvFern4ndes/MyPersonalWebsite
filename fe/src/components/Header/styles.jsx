@@ -1,91 +1,99 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.header`
-  background: transparent;
-  padding: 2% 10% 0;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0px 50px;
+  width: 100%;
+  height: 100px;
+  background: ${({ theme }) => theme.backgroundColor};
+  opacity: 0.85;
+  backdrop-filter: blur(10px);
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
 `;
 
-export const LeftSide = styled.div`
-  font-size: 24px;
-  font-weight: bold;
-  position: relative;
+export const Content = styled.nav`
   display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
-  gap: 16px;
-  transition: transform 1s ease-in-out;
-  cursor: pointer;
+  position: relative;
+  width: 100%;
+  color: ${({ theme }) => theme.color};
+  font-family: 'Source Code Pro', sans-serif;
+  counter-reset: item 0;
+  z-index: 12;
+`;
 
-  img {
+export const Logo = styled.div`
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+
+  a {
     width: 64px;
     height: 64px;
-  }
+    position: relative;
+    z-index: 1;
 
-  :hover {
-    transform: scale(1.2);
+    img {
+      width: 64px;
+      height: 64px;
+    }
   }
 `;
 
-const enterText = keyframes`
-  from {
-    transform: translateX(-60px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-`;
-
-const textLeave = keyframes`
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-60px);
-    opacity: 0;
-  }
-`;
-
-export const LeftText = styled.div`
-  font-family: 'Source Code Pro', sans-serif;
-  opacity: 0;
-
-  &.entrada {
-    animation: ${enterText} 1s ease-out forwards;
-  }
-
-  &.saida {
-    animation: ${textLeave} 1s ease-in forwards;
-  }
-`;
-
-export const RightSide = styled.div`
+export const NavMenu = styled.div`
   display: flex;
-  position: relative;
+  -webkit-box-align: center;
   align-items: center;
 `;
 
-export const ButtonNumber = styled.div`
-  color: ${({ theme }) => theme.tertiaryColor};
-  margin-right: 4px;
+export const OrderedList = styled.ol`
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 `;
 
-export const HeaderButton = styled.button`
-  background: transparent;
-  font-family: 'Source Code Pro', sans-serif;
-  font-weight: 600;
-  color: ${({ theme }) => theme.color};
-  border: none;
-  margin: 8px 32px;
-  display: flex;
-  transition: color 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
+export const ListElement = styled.li`
+  margin: 0px 5px;
+  position: relative;
+  counter-increment: item 1;
+  display: list-item;
+  text-align: -webkit-match-parent;
 
-  :hover {
-    color: ${({ theme }) => theme.tertiaryColor};
-    transform: scale(1.2);
+  a {
+    font-family: 'Source Code Pro', sans-serif;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+
+    ::before {
+      content: "0" counter(item) ".";
+      margin-right: 5px;
+      color: ${({ theme }) => theme.tertiaryColor};
+      text-align: right;
+    }
   }
 `;

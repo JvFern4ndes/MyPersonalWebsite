@@ -4,7 +4,7 @@ import GithubIcon from '../../assets/images/GithubIcon.svg';
 import LinkedinIcon from '../../assets/images/LinkedinIcon.svg';
 import EmailIcon from '../../assets/images/EmailIcon.svg';
 
-export default function StyledSideElement() {
+export default function SocialStyledSideElement() {
   return (
     <Container>
       <Content>

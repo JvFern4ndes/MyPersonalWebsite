@@ -42,6 +42,11 @@ export const Content = styled.ul`
 
   img {
     width: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+
+    :hover {
+      transform: translateY(-10px);
+    }
   }
 
   ::after {
@@ -50,6 +55,6 @@ export const Content = styled.ul`
     width: 1px;
     height: 120px;
     margin: 0 auto;
-    background-color: ${({ theme }) => theme.tertiaryColor};
+    background-color: ${({ theme }) => theme.secondaryColor};
   }
 `;

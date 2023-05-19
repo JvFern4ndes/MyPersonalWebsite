@@ -7,7 +7,7 @@ export const Container = styled.div`
   left: auto;
   right: 10%;
   z-index: 10;
-  color: ${({ theme }) => theme.tertiaryColor};
+  color: ${({ theme }) => theme.secondaryColor};
 `;
 
 export const Content = styled.div`
@@ -28,6 +28,12 @@ export const Content = styled.div`
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
+    transition: transform 0.3s ease-in-out;
+
+    :hover {
+      color: ${({ theme }) => theme.tertiaryColor};
+      transform: translateY(-10px);
+    }
   }
 
   ::after {
@@ -36,6 +42,6 @@ export const Content = styled.div`
     width: 1px;
     height: 120px;
     margin: 0 auto;
-    background-color: ${({ theme }) => theme.tertiaryColor};
+    background-color: ${({ theme }) => theme.secondaryColor};
   }
 `;

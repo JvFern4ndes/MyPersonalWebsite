@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100%;
   max-width: 75%;
   margin: 0 auto;
@@ -16,10 +16,20 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.div`
+  width: 40%;
   font-family: 'Source Code Pro', sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 4%;
+
+  :after {
+    content: '';
+    position: absolute;
+    width: 16%;
+    border-top: 1px solid ${({ theme }) => theme.secondaryColor};
+    margin-top: 1%;
+    margin-left: 1%;
+  }
 `;
 
 export const TextAndImage = styled.div`
@@ -83,6 +93,7 @@ export const Border = styled.div`
 `;
 
 export const Technologies = styled.div`
+  color: ${({ theme }) => theme.secondaryColor};
   width: 40%;
   display: flex;
 `;
@@ -93,8 +104,8 @@ export const Column = styled.div`
   flex-direction: column;
 
   img{
-    max-width: 10%;
-    margin-right: 10%;
+    max-width: 5%;
+    margin-right: 4%;
   }
 `;
 

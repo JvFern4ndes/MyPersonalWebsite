@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 import {
   ButtonNumber,
   HeaderButton,
-  Container, LeftSide, LeftText, RightSide,
+  Container,
+  LeftSide,
+  LeftText,
+  RightSide,
 } from './styles';
 
 import MyLogo from '../../assets/images/MyLogo.svg';
@@ -26,30 +29,24 @@ export default function Header() {
         <LeftText className={isMouseOver ? 'entrada' : 'saida'}>João Victor</LeftText>
       </LeftSide>
       <RightSide>
-        <Link to="/about" style={{ textDecoration: 'none' }}>
+        <Link to="#about">
           <HeaderButton type="button">
             <ButtonNumber>01.</ButtonNumber>
             About
           </HeaderButton>
         </Link>
-        <Link to="/experience" style={{ textDecoration: 'none' }}>
-          <HeaderButton type="button">
-            <ButtonNumber>02.</ButtonNumber>
-            Experience
-          </HeaderButton>
-        </Link>
-        <Link to="portfolio" style={{ textDecoration: 'none' }}>
-          <HeaderButton type="button">
-            <ButtonNumber>03.</ButtonNumber>
-            Portfolio
-          </HeaderButton>
-        </Link>
-        <Link to="contact" style={{ textDecoration: 'none' }}>
-          <HeaderButton type="button">
-            <ButtonNumber>04.</ButtonNumber>
-            Contact
-          </HeaderButton>
-        </Link>
+        <HeaderButton type="button">
+          <ButtonNumber>02.</ButtonNumber>
+          Experience
+        </HeaderButton>
+        <HeaderButton type="button">
+          <ButtonNumber>03.</ButtonNumber>
+          Portfolio
+        </HeaderButton>
+        <HeaderButton type="button">
+          <ButtonNumber>04.</ButtonNumber>
+          Contact
+        </HeaderButton>
         <Link to="resume" style={{ textDecoration: 'none' }}>
           <Button>Resume</Button>
         </Link>

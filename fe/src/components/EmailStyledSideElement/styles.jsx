@@ -5,7 +5,7 @@ export const Container = styled.div`
   position: fixed;
   bottom: 0px;
   left: auto;
-  right: 10%;
+  right: 3.5%;
   z-index: 10;
   color: ${({ theme }) => theme.secondaryColor};
 `;

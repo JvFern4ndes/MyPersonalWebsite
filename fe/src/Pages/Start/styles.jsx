@@ -56,13 +56,12 @@ export const Content = styled.div`
     line-height: 0.9;
     display: block;
   }
-`;
 
-export const SecondText = styled.div`
-  font-size: 64px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.secondaryColor};
-  margin-bottom: 1%;
+  p {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+    display: block;
+  }
 `;
 
 export const ThirdText = styled.div`

@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import {
-  Container, Content, ThirdText,
+  Container, Content,
 } from './styles';
 import Button from '../../components/Button';
 import ColorTexts from '../../components/ColorTexts';
@@ -17,9 +17,11 @@ export default function Home() {
       <Content style={{ transitionDelay: '300' }}>
         <h3>I develop things with javascript.</h3>
       </Content>
-      <ThirdText>
-        I am a<ColorTexts> multiplatform software developer</ColorTexts> with skills in building (and occasionally designing) engaging digital experiences using<ColorTexts> JavaScript</ColorTexts>. Currently, my focus lies in<ColorTexts> front-end web</ColorTexts> and{' '}<ColorTexts>mobile</ColorTexts> development, although I have and plan to further expand my knowledge in<ColorTexts> back-end</ColorTexts> development.
-      </ThirdText>
+      <Content style={{ transitionDelay: '400' }}>
+        <p>
+          I am a<ColorTexts> multiplatform software developer</ColorTexts> with skills in building (and occasionally designing) engaging digital experiences using<ColorTexts> JavaScript</ColorTexts>. Currently, my focus lies in<ColorTexts> front-end web</ColorTexts> and{' '}<ColorTexts>mobile</ColorTexts> development, although I have and plan to further expand my knowledge in<ColorTexts> back-end</ColorTexts> development.
+        </p>
+      </Content>
       <Button>Get In Touch</Button>
 
     </Container>

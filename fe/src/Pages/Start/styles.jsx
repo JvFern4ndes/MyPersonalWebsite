@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: 100%;
-  max-width: 75%;
-  margin: 0 auto;
-  height: 100%;
+export const Container = styled.section`
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px auto;
+  max-width: 1000px;
 `;
 
 export const Content = styled.div`

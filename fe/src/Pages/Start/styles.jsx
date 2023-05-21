@@ -8,18 +8,33 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
+  height: 100vh;
   padding: 0px;
   margin: 0px auto;
   max-width: 1000px;
+  padding: 100px 0px;
 `;
 
 export const Content = styled.div`
-  width: 100%;
-  height: 80vh;
-  margin-left: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
+
+  h1 {
+    margin: 0px 0px 30px 4px;
+    color: ${({ theme }) => theme.tertiaryColor};
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1px;
+    box-sizing: inherit;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    :-webkit-any(article, ascent-override, nav-down, section) {
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+    }
+  }
 `;
 
 export const FirstText = styled.div`

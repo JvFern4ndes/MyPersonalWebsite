@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 3%;
   position: fixed;
   bottom: 0px;
-  left: 10%;
+  left: 3.5%;
   right: auto;
   z-index: 10;
   color: ${({ theme }) => theme.secondaryColor};

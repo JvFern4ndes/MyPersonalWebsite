@@ -19,6 +19,7 @@ export const Container = styled.header`
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
+  box-sizing: inherit !important;
 `;
 
 export const Content = styled.nav`

@@ -35,11 +35,18 @@ export const Content = styled.div`
       margin-block-end: 0.83em;
     }
   }
-`;
 
-export const FirstText = styled.div`
-  font-family: 'Source Code Pro', sans-serif;
-  color: ${({ theme }) => theme.tertiaryColor};
+  h2 {
+    margin: 0px;
+    font-size: 64px;
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    line-height: 1.1;
+    box-sizing: inherit;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 `;
 
 export const Name = styled.div`

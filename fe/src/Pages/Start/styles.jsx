@@ -63,10 +63,3 @@ export const Content = styled.div`
     display: block;
   }
 `;
-
-export const ThirdText = styled.div`
-  width: 100%;
-  max-width: 40%;
-  color: ${({ theme }) => theme.secondaryColor};
-  margin-bottom: 3%;
-`;

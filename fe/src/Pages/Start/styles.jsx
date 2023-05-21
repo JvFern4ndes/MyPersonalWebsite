@@ -47,14 +47,15 @@ export const Content = styled.div`
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
-`;
 
-export const Name = styled.div`
-  font-size: 64px;
-  font-weight: bold;
-  color: ${({ theme }) => theme.color};
-  margin-top: 1%;
-  cursor: pointer;
+  h3 {
+    margin-top: 5px;
+    font-size: 64px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.secondaryColor};
+    line-height: 0.9;
+    display: block;
+  }
 `;
 
 export const SecondText = styled.div`

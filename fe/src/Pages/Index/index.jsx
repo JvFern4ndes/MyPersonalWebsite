@@ -7,6 +7,7 @@ import Start from '../Start';
 import About from '../About';
 import SocialStyledSideElement from '../../components/SocialStyledSideElement';
 import EmailStyledSideElement from '../../components/EmailStyledSideElement';
+import { Content, Pages } from './styles';
 
 export default function Index() {
   return (
@@ -15,8 +16,12 @@ export default function Index() {
       <Header />
       <SocialStyledSideElement />
       <EmailStyledSideElement />
-      <Start />
-      <About />
+      <Content>
+        <Pages>
+          <Start />
+          <About />
+        </Pages>
+      </Content>
     </ThemeProvider>
   );
 }

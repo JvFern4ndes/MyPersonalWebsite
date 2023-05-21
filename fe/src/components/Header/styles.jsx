@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
   align-items: center;
   position: fixed;
   top: 0px;
@@ -13,13 +11,6 @@ export const Container = styled.header`
   width: 100%;
   height: 100px;
   background: ${({ theme }) => theme.backgroundColor};
-  opacity: 0.85;
-  backdrop-filter: blur(10px);
-  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  box-sizing: inherit !important;
 `;
 
 export const Content = styled.nav`

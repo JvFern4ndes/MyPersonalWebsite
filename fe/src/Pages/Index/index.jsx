@@ -3,7 +3,7 @@ import defaultTheme from '../../assets/styles/themes/default';
 import Global from '../../assets/styles/global';
 
 import Header from '../../components/Header';
-import Start from '../Start';
+import Home from '../Home';
 import About from '../About';
 import SocialStyledSideElement from '../../components/SocialStyledSideElement';
 import EmailStyledSideElement from '../../components/EmailStyledSideElement';
@@ -18,7 +18,7 @@ export default function Index() {
       <EmailStyledSideElement />
       <Content>
         <Pages>
-          <Start />
+          <Home />
           <About />
         </Pages>
       </Content>

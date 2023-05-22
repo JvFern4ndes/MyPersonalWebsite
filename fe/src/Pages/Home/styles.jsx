@@ -13,6 +13,7 @@ export const Container = styled.section`
   margin: 0px auto;
   max-width: 1000px;
   padding: 100px 0px;
+  -webkit-font-smoothing: antialiased;
 `;
 
 export const Content = styled.div`

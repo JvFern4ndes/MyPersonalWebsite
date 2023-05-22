@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  width: 100%;
-  max-width: 75%;
-  margin: 0 auto;
-  height: 100%;
+  display: block;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  -webkit-font-smoothing: antialiased;
 `;
 
 export const Content = styled.div`

@@ -48,47 +48,72 @@ export const Container = styled.section`
   }
 `;
 
-export const Content = styled.div`
-  height: 80vh;
-  margin-left: 10%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-`;
-
-export const Title = styled.div`
-  width: 40%;
-  font-family: 'Source Code Pro', sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 4%;
-
-  :after {
-    content: '';
-    position: absolute;
-    width: 16%;
-    border-top: 1px solid ${({ theme }) => theme.secondaryColor};
-    margin-top: 1%;
-    margin-left: 1%;
-  }
-`;
-
 export const TextAndImage = styled.div`
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
 `;
 
-export const Texts = styled.div`
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 8%;
+export const AboutTexts = styled.div`
+  display: block;
+  color: ${({ theme }) => theme.secondaryColor};
 `;
 
 export const Text = styled.div`
-  color: ${({ theme }) => theme.secondaryColor};
-  margin-bottom: 4%;
+  display: block;
+
+  p {
+    margin: 0px 0px 15px;
+    display: block;
+
+    a {
+      display: inline-block;
+      position: relative;
+      color: ${({ theme }) => theme.tertiaryColor};
+      transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+      text-decoration: none;
+      text-decoration-skip-ink: auto;
+      cursor: pointer;
+
+      ::after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 1px;
+        position: relative;
+        bottom: 0%.37em;
+        background-color: ${({ theme }) => theme.tertiaryColor};
+        opacity: 0.5;
+      }
+    }
+  }
+`;
+
+export const SkillsList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-family: 'Source Code Pro', sans-serif;
+
+    ::before {
+      content: ">>";
+      position: absolute;
+      top: 5.5px;
+      left: 0px;
+      color: ${({ theme }) => theme.tertiaryColor};
+      line-height: 12px;
+      margin-right: 12px;
+    }
+  }
 `;
 
 export const Photo = styled.div`

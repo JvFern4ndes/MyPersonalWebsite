@@ -123,7 +123,37 @@ export const Picture = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.tertiaryColor};
 
+  ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  }
+
+  ::after {
+    border: 2px solid ${({ theme }) => theme.tertiaryColor};
+    top: 14px;
+    left: 14px;
+    z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  }
 `;
 
 export const ColorLayer = styled.div`

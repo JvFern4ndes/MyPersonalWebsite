@@ -9,6 +9,7 @@ import {
   SkillsList,
   Picture,
   Wrapper,
+  ImageWrapper,
 } from './styles';
 
 export default function About() {
@@ -38,7 +39,9 @@ export default function About() {
           </SkillsList>
         </AboutTexts>
         <Picture>
-          <Wrapper />
+          <Wrapper>
+            <ImageWrapper />
+          </Wrapper>
         </Picture>
       </TextAndImage>
     </Container>

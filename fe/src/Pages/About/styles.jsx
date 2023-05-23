@@ -156,6 +156,22 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const ImageWrapper = styled.div`
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    border-radius: 4px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  }
+`;
+
 export const ColorLayer = styled.div`
   position: absolute;
   top: 0;

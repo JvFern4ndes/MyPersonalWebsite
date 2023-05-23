@@ -10,6 +10,7 @@ import {
   Picture,
   Wrapper,
   ImageWrapper,
+  ImageContainer,
 } from './styles';
 
 export default function About() {
@@ -40,7 +41,9 @@ export default function About() {
         </AboutTexts>
         <Picture>
           <Wrapper>
-            <ImageWrapper />
+            <ImageWrapper>
+              <ImageContainer />
+            </ImageWrapper>
           </Wrapper>
         </Picture>
       </TextAndImage>

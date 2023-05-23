@@ -172,6 +172,11 @@ export const ImageWrapper = styled.div`
   }
 `;
 
+export const ImageContainer = styled.div`
+  max-width: 500px;
+  display: block;
+`;
+
 export const ColorLayer = styled.div`
   position: absolute;
   top: 0;

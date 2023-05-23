@@ -1,15 +1,14 @@
 /* eslint-disable max-len */
 import ColorTexts from '../../components/ColorTexts';
-import MyPhoto from '../../assets/images/MyPhoto.png';
+// import MyPhoto from '../../assets/images/MyPhoto.png';
 import {
   Container,
   TextAndImage,
   AboutTexts,
   Text,
   SkillsList,
-  Photo,
-  Border,
-  ColorLayer,
+  Picture,
+  Wrapper,
 } from './styles';
 
 export default function About() {
@@ -38,11 +37,9 @@ export default function About() {
             <li>WordPress</li>
           </SkillsList>
         </AboutTexts>
-        <Photo>
-          <img src={MyPhoto} alt="I on my computer" />
-          <ColorLayer />
-          <Border />
-        </Photo>
+        <Picture>
+          <Wrapper />
+        </Picture>
       </TextAndImage>
     </Container>
   );

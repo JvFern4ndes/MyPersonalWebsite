@@ -116,19 +116,14 @@ export const SkillsList = styled.ul`
   }
 `;
 
-export const Photo = styled.div`
+export const Picture = styled.div`
   position: relative;
-  display: inline-block;
-  width: 20%;
-  transition: transform 0.5s ease-in-out;
+  max-width: 300px;
+  display: block;
+`;
 
-  img {
-    max-width: 100%;
-  }
+export const Wrapper = styled.div`
 
-  :hover {
-    transform: scale(1.2);
-  }
 `;
 
 export const ColorLayer = styled.div`

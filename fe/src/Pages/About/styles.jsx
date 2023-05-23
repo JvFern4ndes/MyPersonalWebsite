@@ -175,6 +175,16 @@ export const ImageWrapper = styled.div`
 export const ImageContainer = styled.div`
   max-width: 500px;
   display: block;
+
+  img{
+    max-width: 100%;
+    display: block;
+    position: static;
+
+    [alt=""] {
+      filter: border-top-left-radius(5px);
+    }
+  }
 `;
 
 export const ColorLayer = styled.div`

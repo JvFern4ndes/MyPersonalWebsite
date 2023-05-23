@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import ColorTexts from '../../components/ColorTexts';
-// import MyPhoto from '../../assets/images/MyPhoto.png';
+import MyPhoto from '../../assets/images/MyPhoto.png';
 import {
   Container,
   TextAndImage,
@@ -42,7 +42,9 @@ export default function About() {
         <Picture>
           <Wrapper>
             <ImageWrapper>
-              <ImageContainer />
+              <ImageContainer>
+                <img src={MyPhoto} alt="I" />
+              </ImageContainer>
             </ImageWrapper>
           </Wrapper>
         </Picture>

@@ -29,8 +29,8 @@ export default function Header() {
               </a>
             </ListElement>
             <ListElement>
-              <a href="/#experience">
-                Experience
+              <a href="/#skills">
+                Skills
               </a>
             </ListElement>
             <ListElement>

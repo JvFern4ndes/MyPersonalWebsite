@@ -187,6 +187,15 @@ export const ImageContainer = styled.div`
   }
 `;
 
+export const ImageContainerBrother = styled.div`
+  opacity: 0;
+  background-color: rgb(232, 232, 232);
+  position: absolute;
+  inset: 0px;
+  object-fit: cover;
+  display: block;
+`;
+
 export const ColorLayer = styled.div`
   position: absolute;
   top: 0;

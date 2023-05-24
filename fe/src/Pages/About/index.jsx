@@ -11,6 +11,7 @@ import {
   Wrapper,
   ImageWrapper,
   ImageContainer,
+  ImageContainerBrother,
 } from './styles';
 
 export default function About() {
@@ -45,6 +46,9 @@ export default function About() {
               <ImageContainer>
                 <img src={MyPhoto} alt="I" />
               </ImageContainer>
+              <ImageContainerBrother>
+                ImageContainerBrother
+              </ImageContainerBrother>
             </ImageWrapper>
           </Wrapper>
         </Picture>

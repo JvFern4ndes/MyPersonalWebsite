@@ -8,6 +8,7 @@ import About from '../About';
 import SocialStyledSideElement from '../../components/SocialStyledSideElement';
 import EmailStyledSideElement from '../../components/EmailStyledSideElement';
 import { Content, Pages } from './styles';
+import Skills from '../Skills';
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
         <Pages>
           <Home />
           <About />
+          <Skills />
         </Pages>
       </Content>
     </ThemeProvider>

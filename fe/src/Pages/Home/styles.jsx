@@ -62,5 +62,6 @@ export const Content = styled.div`
     margin: 20px 0px 0px;
     max-width: 540px;
     display: block;
+    color: ${({ theme }) => theme.secondaryColor};
   }
 `;

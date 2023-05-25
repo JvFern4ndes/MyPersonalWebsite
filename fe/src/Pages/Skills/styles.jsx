@@ -113,11 +113,6 @@ export const PlayIcon = styled.div`
 
   img {
     width: 32px;
-    transition: transform 0.3s ease-in-out;
-
-    :hover {
-      transform: scale(1.2);
-    }
   }
 `;
 
@@ -145,5 +140,15 @@ export const CardTitle = styled.h3`
       top: 0px;
       left: 0px;
     }
+  }
+`;
+
+export const TechnologieDescription = styled.div`
+  color: ${({ theme }) => theme.secondaryColor};
+  display: block;
+
+  p {
+    margin: 0px;
+    font-size: 18px;
   }
 `;

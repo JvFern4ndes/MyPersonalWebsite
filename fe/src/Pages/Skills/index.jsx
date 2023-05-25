@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Link } from 'react-router-dom';
 import JavascriptIcon from '../../assets/images/Javascript.svg';
 import ReactIcon from '../../assets/images/React.svg';
@@ -18,6 +19,7 @@ import {
   TechnologiesGrid,
   PlayIcon,
   CardTitle,
+  TechnologieDescription,
 } from './styles';
 
 export default function Skills() {
@@ -42,6 +44,11 @@ export default function Skills() {
             <CardTitle>
               <Link to="/JavascriptLearn">Javascript</Link>
             </CardTitle>
+            <TechnologieDescription>
+              <p>
+                Linguagem de programação web para interatividade e funcionalidade em páginas.
+              </p>
+            </TechnologieDescription>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -61,6 +68,11 @@ export default function Skills() {
             <CardTitle>
               <Link to="/ReactLearn">React</Link>
             </CardTitle>
+            <TechnologieDescription>
+              <p>
+                Linguagem de programação web para interatividade e funcionalidade em páginas.
+              </p>
+            </TechnologieDescription>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -80,6 +92,11 @@ export default function Skills() {
             <CardTitle>
               <Link to="/ReactNativeLearn">React Native</Link>
             </CardTitle>
+            <TechnologieDescription>
+              <p>
+                Linguagem de programação web para interatividade e funcionalidade em páginas.
+              </p>
+            </TechnologieDescription>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -99,6 +116,11 @@ export default function Skills() {
             <CardTitle>
               <Link to="/NodejsLearn">Node.js</Link>
             </CardTitle>
+            <TechnologieDescription>
+              <p>
+                Linguagem de programação web para interatividade e funcionalidade em páginas.
+              </p>
+            </TechnologieDescription>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -118,6 +140,11 @@ export default function Skills() {
             <CardTitle>
               <Link to="/MongodbLearn">MongoDB</Link>
             </CardTitle>
+            <TechnologieDescription>
+              <p>
+                Linguagem de programação web para interatividade e funcionalidade em páginas.
+              </p>
+            </TechnologieDescription>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -137,6 +164,11 @@ export default function Skills() {
             <CardTitle>
               <Link to="/WordpressLearn">WordPress</Link>
             </CardTitle>
+            <TechnologieDescription>
+              <p>
+                Linguagem de programação web para interatividade e funcionalidade em páginas.
+              </p>
+            </TechnologieDescription>
           </CardContent>
         </TechnologieCard>
       </TechnologiesGrid>

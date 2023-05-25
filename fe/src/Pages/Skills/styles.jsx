@@ -152,3 +152,15 @@ export const TechnologieDescription = styled.div`
     font-size: 18px;
   }
 `;
+
+export const CardFooter = styled.footer`
+  display: block;
+
+  p {
+    margin: 20px 0px 0px;
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: ${({ theme }) => theme.tertiaryColor};
+  }
+`;

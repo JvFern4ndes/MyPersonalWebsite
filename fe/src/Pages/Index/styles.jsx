@@ -15,7 +15,7 @@ export const Pages = styled.main`
   counter-reset: section 0;
   margin: 0px auto;
   width: 100%;
-  max-width: 1600px;
+  max-width: 100%;
   min-height: 100vh;
   display: block;
 `;

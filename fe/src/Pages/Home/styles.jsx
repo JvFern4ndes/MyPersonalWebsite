@@ -11,7 +11,7 @@ export const Container = styled.section`
   height: 100vh;
   padding: 0px;
   margin: 0px auto;
-  max-width: 1000px;
+  max-width: 1200px;
   padding-top: 100px;
   -webkit-font-smoothing: antialiased;
 `;
@@ -23,7 +23,7 @@ export const Content = styled.div`
     margin: 0px 0px 30px 4px;
     color: ${({ theme }) => theme.tertiaryColor};
     font-family: 'Source Code Pro', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.1px;
     box-sizing: inherit;
@@ -39,7 +39,7 @@ export const Content = styled.div`
 
   h2 {
     margin: 0px;
-    font-size: 64px;
+    font-size: 80px;
     margin: 0px 0px 10px;
     font-weight: 600;
     line-height: 1.1;
@@ -47,16 +47,20 @@ export const Content = styled.div`
     display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
   }
 
   h3 {
     margin: 0px;
     margin-top: 5px;
-    font-size: 64px;
+    font-size: 78px;
     font-weight: 600;
     color: ${({ theme }) => theme.secondaryColor};
     line-height: 0.9;
     display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
   }
 
   p {

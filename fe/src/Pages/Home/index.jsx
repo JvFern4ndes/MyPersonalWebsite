@@ -23,7 +23,17 @@ export default function Home() {
         </p>
       </Content>
       <Content style={{ transitionDelay: '500' }}>
-        <Button style={{ marginTop: 32 }}>Get In Touch</Button>
+        <Button style={{
+          marginTop: 50,
+          paddingTop: 30,
+          paddingBottom: 30,
+          paddingLeft: 40,
+          paddingRight: 40,
+          fontSize: 20,
+        }}
+        >
+          Get In Touch!
+        </Button>
       </Content>
     </Container>
   );

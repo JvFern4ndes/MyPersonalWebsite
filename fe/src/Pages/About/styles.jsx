@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   display: block;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0px auto;
   padding: 100px 0px;
-  -webkit-font-smoothing: antialiased;
 
   h2 {
     display: flex;
@@ -99,6 +98,7 @@ export const SkillsList = styled.ul`
     margin-bottom: 10px;
     padding-left: 30px;
     font-family: 'Source Code Pro', sans-serif;
+    font-size: 16px;
 
     ::before {
       content: ">>";

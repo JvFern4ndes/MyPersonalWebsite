@@ -17,7 +17,7 @@ export default function Header() {
     <Container>
       <Content>
         <Logo tabIndex={-1}>
-          <a href="/" aria-label="Home">
+          <a href="/#home" aria-label="Home">
             <img src={MyLogo} alt="My logo" />
           </a>
         </Logo>

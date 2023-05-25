@@ -10,7 +10,11 @@ export const Container = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: 100px;
-  background: ${({ theme }) => theme.backgroundColor};
+  background-color: #080b18CC;
+  backdrop-filter: blur(10px);
+  filter: none;
+  pointer-events: auto !important;
+  user-select: auto !important;
 `;
 
 export const Content = styled.nav`
@@ -23,8 +27,10 @@ export const Content = styled.nav`
   width: 100%;
   color: ${({ theme }) => theme.color};
   font-family: 'Source Code Pro', sans-serif;
+  font-size: 16px;
   counter-reset: item 0;
   z-index: 12;
+  box-sizing: inherit;
 `;
 
 export const Logo = styled.div`
@@ -43,6 +49,11 @@ export const Logo = styled.div`
     img {
       width: 64px;
       height: 64px;
+      transition: transform 0.5s ease-in-out;
+
+      :hover {
+        transform: scale(1.2);
+      }
     }
   }
 `;
@@ -86,6 +97,10 @@ export const ListElement = styled.li`
       margin-right: 5px;
       color: ${({ theme }) => theme.tertiaryColor};
       text-align: right;
+    }
+
+    :hover {
+      color: ${({ theme }) => theme.tertiaryColor};
     }
   }
 `;

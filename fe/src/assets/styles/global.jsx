@@ -1,18 +1,22 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  html {
-    box-sizing: border;
-    width: 100%;
-    scroll-behavior: smooth;
+  * {
+    box-sizing: border-box;
   }
 
-  * {
-    margin: 0px;
-    padding: 0;
+  html {
     box-sizing: border-box;
-    font-family: 'Inter', monospace;
-    line-height: 1.5;
+    width: 100%;
+    scroll-behavior: smooth;
+    display: block;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
   }
 
   body {
@@ -22,8 +26,10 @@ export default createGlobalStyle`
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     background: ${({ theme }) => theme.backgroundColor};
+    font-family: 'Inter', monospace;
     color: ${({ theme }) => theme.color};
     font-size: 20px;
+    line-height: 1.3;
   }
 
   button {

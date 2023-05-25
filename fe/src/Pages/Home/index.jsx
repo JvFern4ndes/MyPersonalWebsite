@@ -7,7 +7,7 @@ import ColorTexts from '../../components/ColorTexts';
 
 export default function Home() {
   return (
-    <Container>
+    <Container id="home">
       <Content style={{ transitionDelay: '100' }}>
         <h1>Hi, my name is</h1>
       </Content>

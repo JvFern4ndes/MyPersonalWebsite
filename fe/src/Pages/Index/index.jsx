@@ -7,23 +7,25 @@ import Home from '../Home';
 import About from '../About';
 import SocialStyledSideElement from '../../components/SocialStyledSideElement';
 import EmailStyledSideElement from '../../components/EmailStyledSideElement';
-import { Content, Pages } from './styles';
+import { Container, Content, Pages } from './styles';
 import Skills from '../Skills';
 
 export default function Index() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Global />
-      <Header />
-      <SocialStyledSideElement />
-      <EmailStyledSideElement />
-      <Content>
-        <Pages>
-          <Home />
-          <About />
-          <Skills />
-        </Pages>
-      </Content>
+      <Container>
+        <Header />
+        <SocialStyledSideElement />
+        <EmailStyledSideElement />
+        <Content>
+          <Pages>
+            <Home />
+            <About />
+            <Skills />
+          </Pages>
+        </Content>
+      </Container>
     </ThemeProvider>
   );
 }

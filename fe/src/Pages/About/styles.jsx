@@ -26,7 +26,7 @@ export const Container = styled.section`
       margin-right: 10px;
       color: ${({ theme }) => theme.tertiaryColor};
       font-family: 'Source Code Pro', sans-serif;
-      font-size: 20px;
+      font-size: 32px;
       font-weight: 400;
       white-space: nowrap;
       line-height: 1.1;
@@ -40,10 +40,6 @@ export const Container = styled.section`
       height: 1px;
       margin-left: 20px;
       background-color: ${({ theme }) => theme.tertiaryColor};
-      font-size: 20px;
-      white-space: nowrap;
-      font-weight: 600;
-      line-height: 1.1;
     }
   }
 `;

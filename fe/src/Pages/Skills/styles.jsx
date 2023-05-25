@@ -59,6 +59,16 @@ export const TechnologieCard = styled.li`
   display: list-item;
   text-align: -webkit-match-parent;
   list-style: none;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+  :hover {
+    transform: translateY(-5px);
+
+    a {
+      color: ${({ theme }) => theme.tertiaryColor};
+    }
+  }
 `;
 
 export const CardContent = styled.div`
@@ -107,6 +117,33 @@ export const PlayIcon = styled.div`
 
     :hover {
       transform: scale(1.2);
+    }
+  }
+`;
+
+export const CardTitle = styled.h3`
+  margin: 0px 0px 10px;
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+
+  a {
+    position: static;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: ${({ theme }) => theme.color};
+    line-height: 1.1;
+
+    ::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
     }
   }
 `;

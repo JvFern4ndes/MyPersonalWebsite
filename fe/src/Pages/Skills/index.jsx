@@ -17,6 +17,7 @@ import {
   TechnologieCard,
   TechnologiesGrid,
   PlayIcon,
+  CardTitle,
 } from './styles';
 
 export default function Skills() {
@@ -38,6 +39,9 @@ export default function Skills() {
                 </PlayIcon>
               </HeaderTop>
             </CardContentHeader>
+            <CardTitle>
+              <Link to="/JavascriptLearn">Javascript</Link>
+            </CardTitle>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -54,6 +58,9 @@ export default function Skills() {
                 </PlayIcon>
               </HeaderTop>
             </CardContentHeader>
+            <CardTitle>
+              <Link to="/ReactLearn">React</Link>
+            </CardTitle>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -70,6 +77,9 @@ export default function Skills() {
                 </PlayIcon>
               </HeaderTop>
             </CardContentHeader>
+            <CardTitle>
+              <Link to="/ReactNativeLearn">React Native</Link>
+            </CardTitle>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -86,6 +96,9 @@ export default function Skills() {
                 </PlayIcon>
               </HeaderTop>
             </CardContentHeader>
+            <CardTitle>
+              <Link to="/NodejsLearn">Node.js</Link>
+            </CardTitle>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -102,6 +115,9 @@ export default function Skills() {
                 </PlayIcon>
               </HeaderTop>
             </CardContentHeader>
+            <CardTitle>
+              <Link to="/MongodbLearn">MongoDB</Link>
+            </CardTitle>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -118,6 +134,9 @@ export default function Skills() {
                 </PlayIcon>
               </HeaderTop>
             </CardContentHeader>
+            <CardTitle>
+              <Link to="/WordpressLearn">WordPress</Link>
+            </CardTitle>
           </CardContent>
         </TechnologieCard>
       </TechnologiesGrid>

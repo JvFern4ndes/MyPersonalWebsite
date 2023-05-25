@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 3%;
+  width: 50px;
   position: fixed;
   bottom: 0px;
   left: auto;
-  right: 3.5%;
+  right: 50px;
   z-index: 10;
   color: ${({ theme }) => theme.secondaryColor};
 `;
@@ -21,6 +21,7 @@ export const Content = styled.div`
     margin: 20px auto;
     padding: 10px;
     font-family: 'Source Code Pro', sans-serif;
+    font-size: 16px;
     letter-spacing: 0.1em;
     writing-mode: vertical-lr;
     display: inline-block;

@@ -50,6 +50,7 @@ export const Content = styled.div`
   }
 
   h3 {
+    margin: 0px;
     margin-top: 5px;
     font-size: 64px;
     font-weight: 600;

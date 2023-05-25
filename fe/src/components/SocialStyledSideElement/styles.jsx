@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 3%;
+  width: 50px;
   position: fixed;
   bottom: 0px;
-  left: 3.5%;
+  left: 50px;
   right: auto;
   z-index: 10;
   color: ${({ theme }) => theme.secondaryColor};
@@ -29,7 +29,7 @@ export const Content = styled.ul`
   }
 
   li, a {
-    padding: 10px;
+    padding: 8px;
   }
 
   a {
@@ -41,18 +41,18 @@ export const Content = styled.ul`
   }
 
   img {
-    width: 1.5rem;
+    width: 30px;
     transition: transform 0.3s ease-in-out;
 
     :hover {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
     }
   }
 
   ::after {
     content: '';
     display: block;
-    width: 1px;
+    width: 2px;
     height: 120px;
     margin: 0 auto;
     background-color: ${({ theme }) => theme.secondaryColor};

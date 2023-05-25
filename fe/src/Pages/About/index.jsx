@@ -35,7 +35,7 @@ export default function About() {
             <li>Javascript (ES6+)</li>
             <li>React</li>
             <li>React Native</li>
-            <li>Express.js</li>
+            <li>Node.js</li>
             <li>MongoDB</li>
             <li>WordPress</li>
           </SkillsList>

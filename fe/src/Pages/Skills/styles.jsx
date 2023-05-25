@@ -42,3 +42,54 @@ export const SkillsPageTitle = styled.h2`
     background-color: ${({ theme }) => theme.tertiaryColor};
   }
 `;
+
+export const TechnologiesGrid = styled.ul`
+  list-style: none;
+  padding: 0px;
+  margin: 50px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
+`;
+
+export const TechnologieCard = styled.li`
+  position: relative;
+  cursor: default;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+`;
+
+export const CardContent = styled.div`
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.backgroundColorLight};
+  overflow: auto;
+`;
+
+export const CardContentHeader = styled.header`
+  display: block;
+`;
+
+export const HeaderTop = styled.div`
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 35px;
+`;
+
+export const Icon = styled.div`
+  display: block;
+`;

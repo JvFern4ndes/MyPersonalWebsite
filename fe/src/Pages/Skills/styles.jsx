@@ -10,9 +10,13 @@ export const Container = styled.section`
 `;
 
 export const SkillsPageTitle = styled.h2`
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
   font-size: 32px;
-    margin: 0px 0px 10px;
-    font-weight: 600;
-    line-height: 1.1;
-    display: block;
+  white-space: nowrap;
+  font-weight: 600;
+  line-height: 1.1;
 `;

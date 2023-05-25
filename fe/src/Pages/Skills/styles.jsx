@@ -79,6 +79,7 @@ export const CardContent = styled.div`
 
 export const CardContentHeader = styled.header`
   display: block;
+  width: 100%;
 `;
 
 export const HeaderTop = styled.div`
@@ -90,6 +91,22 @@ export const HeaderTop = styled.div`
   margin-bottom: 35px;
 `;
 
-export const Icon = styled.div`
+export const TechnologieIcon = styled.div`
   display: block;
+`;
+
+export const PlayIcon = styled.div`
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-right: -10px;
+
+  img {
+    width: 32px;
+    transition: transform 0.3s ease-in-out;
+
+    :hover {
+      transform: scale(1.2);
+    }
+  }
 `;

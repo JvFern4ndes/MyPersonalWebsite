@@ -12,7 +12,7 @@ export const Container = styled.section`
   padding: 0px;
   margin: 0px auto;
   max-width: 1000px;
-  padding: 100px 0px;
+  padding-top: 100px;
   -webkit-font-smoothing: antialiased;
 `;
 

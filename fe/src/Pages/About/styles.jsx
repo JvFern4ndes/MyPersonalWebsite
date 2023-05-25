@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   display: block;
-  max-width: 900px;
+  max-width: 1300px;
   margin: 0px auto;
   padding: 100px 0px;
   -webkit-font-smoothing: antialiased;

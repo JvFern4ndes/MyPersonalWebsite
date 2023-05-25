@@ -51,7 +51,7 @@ export const Container = styled.section`
 export const TextAndImage = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 50px;
+  gap: 100px;
 `;
 
 export const AboutTexts = styled.div`

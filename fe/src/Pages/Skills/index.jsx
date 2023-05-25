@@ -1,9 +1,9 @@
-import { Container } from './styles';
+import { Container, SkillsPageTitle } from './styles';
 
 export default function Skills() {
   return (
     <Container id="skills">
-      Skills
+      <SkillsPageTitle>Technologies I Use In Development</SkillsPageTitle>
     </Container>
   );
 }

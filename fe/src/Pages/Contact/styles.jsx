@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  max-width: 600px;
+  max-width: 750px;
   margin: 0px auto 100px;
   text-align: center;
   padding: 100px 0px;
@@ -43,4 +43,12 @@ export const Title = styled.h2`
   font-weight: 600;
   line-height: 1.1;
   display: block;
+`;
+
+export const Text = styled.p`
+  margin: 0px;
+  display: block;
+  color: ${({ theme }) => theme.secondaryColor};
+  margin-block-start: 2em;
+  margin-block-end: 1em;
 `;

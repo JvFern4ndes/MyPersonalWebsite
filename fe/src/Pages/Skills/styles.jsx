@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   margin: 0px auto;
   padding: 100px 0px;
-  max-width: 1200px;
+  max-width: 1250px;
   display: block;
 `;
 
@@ -49,7 +49,7 @@ export const TechnologiesGrid = styled.ul`
   margin: 50px 0px 0px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15px;
+  gap: 25px 20px;
   position: relative;
 `;
 
@@ -63,7 +63,7 @@ export const TechnologieCard = styled.li`
   cursor: pointer;
 
   :hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 
     a {
       color: ${({ theme }) => theme.tertiaryColor};

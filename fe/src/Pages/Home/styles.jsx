@@ -11,7 +11,7 @@ export const Container = styled.section`
   height: 100vh;
   padding: 0px;
   margin: 0px auto;
-  max-width: 1200px;
+  max-width: 1250px;
   padding-top: 100px;
   -webkit-font-smoothing: antialiased;
 `;
@@ -54,7 +54,7 @@ export const Content = styled.div`
   h3 {
     margin: 0px;
     margin-top: 5px;
-    font-size: 78px;
+    font-size: 80px;
     font-weight: 600;
     color: ${({ theme }) => theme.secondaryColor};
     line-height: 0.9;

@@ -9,6 +9,7 @@ import SocialStyledSideElement from '../../components/SocialStyledSideElement';
 import EmailStyledSideElement from '../../components/EmailStyledSideElement';
 import { Container, Content, Pages } from './styles';
 import Skills from '../Skills';
+import Contact from '../Contact';
 
 export default function Index() {
   return (
@@ -23,6 +24,7 @@ export default function Index() {
             <Home />
             <About />
             <Skills />
+            <Contact />
           </Pages>
         </Content>
       </Container>

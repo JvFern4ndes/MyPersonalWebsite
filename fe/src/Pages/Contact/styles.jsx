@@ -36,3 +36,11 @@ export const NumberedTitle = styled.h2`
     line-height: 1.1;
   }
 `;
+
+export const Title = styled.h2`
+  font-size: 80px;
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  line-height: 1.1;
+  display: block;
+`;

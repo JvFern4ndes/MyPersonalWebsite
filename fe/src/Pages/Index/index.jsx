@@ -10,6 +10,7 @@ import EmailStyledSideElement from '../../components/EmailStyledSideElement';
 import { Container, Content, Pages } from './styles';
 import Skills from '../Skills';
 import Contact from '../Contact';
+import Portfolio from '../Portfolio';
 
 export default function Index() {
   return (
@@ -24,6 +25,7 @@ export default function Index() {
             <Home />
             <About />
             <Skills />
+            <Portfolio />
             <Contact />
           </Pages>
         </Content>

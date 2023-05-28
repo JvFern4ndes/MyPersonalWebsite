@@ -1,7 +1,9 @@
-import { Container } from './styles';
+import { Container, Title } from './styles';
 
 export default function Portfolio() {
   return (
-    <Container id="portfolio">Portfolio</Container>
+    <Container id="portfolio">
+      <Title>Some Things I&apos;ve Built</Title>
+    </Container>
   );
 }

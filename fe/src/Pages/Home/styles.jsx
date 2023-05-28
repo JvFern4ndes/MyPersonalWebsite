@@ -9,10 +9,9 @@ export const Container = styled.section`
   align-items: flex-start;
   min-height: 100vh;
   height: 100vh;
-  padding: 0px;
+  padding: 100px 0px;
   margin: 0px auto;
   max-width: 1250px;
-  padding-top: 100px;
   -webkit-font-smoothing: antialiased;
 `;
 

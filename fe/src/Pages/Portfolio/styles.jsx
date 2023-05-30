@@ -98,3 +98,50 @@ export const ProjectTitle = styled.h3`
     color: ${({ theme }) => theme.tertiaryColor};
   }
 `;
+
+export const ProjectDescription = styled.div`
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.backgroundColorLight};
+  color: ${({ theme }) => theme.secondaryColor};
+  font-size: 20px;
+  display: block;
+  text-align: right;
+
+  p:last-child, p:last-of-type {
+    margin: 0px;
+    display: block;
+  }
+`;
+
+export const ProjectTechList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+  text-align: right;
+
+  :nth-of-type(2n+1) {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+  }
+`;
+
+export const TechOfList = styled.li`
+  font-family: 'Source Code Pro', sans-serif;
+  color: ${({ theme }) => theme.secondaryColor};
+  white-space: nowrap;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+
+  :nth-of-type(1n+1) {
+    margin: 0px 0px 5px 20px;
+  }
+`;

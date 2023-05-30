@@ -6,6 +6,9 @@ import {
   ProjectContent,
   Overline,
   ProjectTitle,
+  ProjectDescription,
+  ProjectTechList,
+  TechOfList,
 } from './styles';
 
 export default function Portfolio() {
@@ -20,6 +23,15 @@ export default function Portfolio() {
               <Link to="/#">
                 <ProjectTitle>Project 1</ProjectTitle>
               </Link>
+              <ProjectDescription>
+                <p>Realização do projeto 1</p>
+              </ProjectDescription>
+              <ProjectTechList>
+                <TechOfList>React</TechOfList>
+                <TechOfList>Javascript</TechOfList>
+                <TechOfList>CSS</TechOfList>
+                <TechOfList>HTML</TechOfList>
+              </ProjectTechList>
             </>
           </ProjectContent>
         </ProjectContainer>
@@ -30,6 +42,15 @@ export default function Portfolio() {
               <Link to="/#">
                 <ProjectTitle>Project 2</ProjectTitle>
               </Link>
+              <ProjectDescription>
+                <p>Realização do projeto 2</p>
+              </ProjectDescription>
+              <ProjectTechList>
+                <TechOfList>React</TechOfList>
+                <TechOfList>Javascript</TechOfList>
+                <TechOfList>CSS</TechOfList>
+                <TechOfList>HTML</TechOfList>
+              </ProjectTechList>
             </>
           </ProjectContent>
         </ProjectContainer>

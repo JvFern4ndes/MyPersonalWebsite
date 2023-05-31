@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+
+import GithubIcon from '../../assets/images/GithubIcon.svg';
+import ProjectLink from '../../assets/images/ProjectLink.svg';
+
 import {
   Container,
   ProjectsList, Title,
@@ -9,6 +13,7 @@ import {
   ProjectDescription,
   ProjectTechList,
   TechOfList,
+  ProjectLinks,
 } from './styles';
 
 export default function Portfolio() {
@@ -32,6 +37,14 @@ export default function Portfolio() {
                 <TechOfList>CSS</TechOfList>
                 <TechOfList>HTML</TechOfList>
               </ProjectTechList>
+              <ProjectLinks>
+                <Link to="/#">
+                  <img src={GithubIcon} alt="Github Link" />
+                </Link>
+                <Link to="/#">
+                  <img src={ProjectLink} alt="Project Link" />
+                </Link>
+              </ProjectLinks>
             </>
           </ProjectContent>
         </ProjectContainer>
@@ -51,6 +64,14 @@ export default function Portfolio() {
                 <TechOfList>CSS</TechOfList>
                 <TechOfList>HTML</TechOfList>
               </ProjectTechList>
+              <ProjectLinks>
+                <Link to="/#">
+                  <img src={GithubIcon} alt="Github Link" />
+                </Link>
+                <Link to="/#">
+                  <img src={ProjectLink} alt="Project Link" />
+                </Link>
+              </ProjectLinks>
             </>
           </ProjectContent>
         </ProjectContainer>

@@ -145,3 +145,38 @@ export const TechOfList = styled.li`
     margin: 0px 0px 5px 20px;
   }
 `;
+
+export const ProjectLinks = styled.div`
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  text-align: right;
+  list-style: none;
+
+  :nth-of-type(1n+1) {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-left: 0px;
+    margin-right: -10px;
+  }
+
+  a {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    cursor: pointer;
+  }
+
+  img {
+    width: 24px;
+  }
+`;

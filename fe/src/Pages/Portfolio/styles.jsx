@@ -216,3 +216,36 @@ export const ProjectImage = styled.div`
     }
   }
 `;
+
+export const ImageWrapper = styled.div`
+  border-radius: 4px;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+`;
+
+export const ImageWrapperSon = styled.div`
+  max-width: 700px;
+  display: block;
+
+  img {
+    max-width: 100%;
+    display: block;
+    position: static;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+    [alt=""] {
+      filter: blur(5px);
+    }
+  }
+`;

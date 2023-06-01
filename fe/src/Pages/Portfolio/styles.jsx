@@ -180,3 +180,39 @@ export const ProjectLinks = styled.div`
     width: 24px;
   }
 `;
+
+export const ProjectImage = styled.div`
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+  display: block;
+
+  :nth-of-type(2n+1) {
+    grid-column: 1 / 8;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    background-color: ${({ theme }) => theme.tertiaryColor};
+    border-radius: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    cursor: pointer;
+    list-style: none;
+
+    ::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0px;
+      z-index: 3;
+      background-color: #0A192F;
+      mix-blend-mode: screen;
+    }
+  }
+`;

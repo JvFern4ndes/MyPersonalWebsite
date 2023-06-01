@@ -14,6 +14,7 @@ import {
   ProjectTechList,
   TechOfList,
   ProjectLinks,
+  ProjectImage,
 } from './styles';
 
 export default function Portfolio() {
@@ -47,6 +48,11 @@ export default function Portfolio() {
               </ProjectLinks>
             </>
           </ProjectContent>
+          <ProjectImage>
+            <Link to="/#">
+              Image
+            </Link>
+          </ProjectImage>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectContent>
@@ -74,6 +80,11 @@ export default function Portfolio() {
               </ProjectLinks>
             </>
           </ProjectContent>
+          <ProjectImage>
+            <Link to="/#">
+              Image
+            </Link>
+          </ProjectImage>
         </ProjectContainer>
       </ProjectsList>
     </Container>

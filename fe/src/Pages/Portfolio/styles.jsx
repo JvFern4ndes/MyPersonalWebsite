@@ -79,6 +79,14 @@ export const ProjectContent = styled.div`
   }
 `;
 
+export const Content = styled.div`
+  display: block;
+
+  :nth-of-type(2n+1) {
+    text-align: right;
+  }
+`;
+
 export const Overline = styled.p`
   margin: 10px 0px;
   color: ${({ theme }) => theme.tertiaryColor};
@@ -239,6 +247,13 @@ export const ImageWrapper = styled.div`
     right: 0;
     top: 0;
     width: 100%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+    [alt=""] {
+      filter: blur(5px);
+    }
   }
 `;
 

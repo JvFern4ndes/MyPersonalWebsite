@@ -10,6 +10,7 @@ import {
   ProjectsList, Title,
   ProjectContainer,
   ProjectContent,
+  Content,
   Overline,
   ProjectTitle,
   ProjectDescription,
@@ -28,7 +29,7 @@ export default function Portfolio() {
       <ProjectsList>
         <ProjectContainer>
           <ProjectContent>
-            <>
+            <Content>
               <Overline>Featured Project</Overline>
               <Link to="/#">
                 <ProjectTitle>Project 1</ProjectTitle>
@@ -50,7 +51,7 @@ export default function Portfolio() {
                   <img src={ProjectLink} alt="Project Link" />
                 </Link>
               </ProjectLinks>
-            </>
+            </Content>
           </ProjectContent>
           <ProjectImage>
             <Link to="/#">

@@ -57,6 +57,7 @@ export const ProjectContainer = styled.li`
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
   align-items: center;
+  text-align: -webkit-match-parent;
 
   :not(:last-of-type) {
     margin-bottom: 100px;
@@ -67,6 +68,7 @@ export const ProjectContent = styled.div`
   position: relative;
   grid-area: 1 / 1 / -1 / 7;
   display: block;
+  z-index: 10;
 
   :nth-of-type(2n+1) {
     grid-column: 7 / -1;

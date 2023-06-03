@@ -227,6 +227,19 @@ export const ImageWrapper = styled.div`
   display: inline-block;
   position: relative;
   overflow: hidden;
+
+  img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
 `;
 
 export const ImageWrapperSon = styled.div`

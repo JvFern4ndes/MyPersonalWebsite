@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import GithubIcon from '../../assets/images/GithubIcon.svg';
 import ProjectLink from '../../assets/images/ProjectLink.svg';
 import TransparentImage from '../../assets/images/TransparentImage.svg';
+import ProjectImage1 from '../../assets/images/ProjectImage1.png';
 
 import {
   Container,
@@ -57,6 +58,7 @@ export default function Portfolio() {
                 <ImageWrapperSon>
                   <img src={TransparentImage} alt="" />
                 </ImageWrapperSon>
+                <img src={ProjectImage1} alt="Project 1" />
               </ImageWrapper>
             </Link>
           </ProjectImage>

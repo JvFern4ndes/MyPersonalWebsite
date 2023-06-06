@@ -196,7 +196,7 @@ export const ProjectImage = styled.div`
   grid-area: 1 / 6 / -1 / -1;
   position: relative;
   z-index: 1;
-  display: block;
+  display: flex;
 
   :nth-of-type(2n+1) {
     grid-column: 1 / 8;
@@ -208,7 +208,7 @@ export const ProjectImage = styled.div`
     background-color: ${({ theme }) => theme.tertiaryColor};
     border-radius: 4px;
     vertical-align: middle;
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     cursor: pointer;
@@ -234,7 +234,7 @@ export const ImageWrapper = styled.div`
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
-  display: inline-block;
+  display: flex;
   position: relative;
   overflow: hidden;
 

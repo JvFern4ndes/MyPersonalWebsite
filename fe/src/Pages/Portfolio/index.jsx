@@ -96,6 +96,7 @@ export default function Portfolio() {
                 <ImageWrapperSon>
                   <img src={TransparentImage} alt="" />
                 </ImageWrapperSon>
+                <img src={ProjectImage1} alt="Project 1" />
               </ImageWrapper>
             </Link>
           </ProjectImage>

@@ -52,12 +52,12 @@ export const ProjectsList = styled.ul`
 
 export const ProjectContainer = styled.li`
   position: relative;
-  display: flex;
+  display: grid;
   gap: 10px;
-  grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
   align-items: center;
   text-align: -webkit-match-parent;
+  list-style: none;
 
   :not(:last-of-type) {
     margin-bottom: 100px;
@@ -69,6 +69,7 @@ export const ProjectContent = styled.div`
   grid-area: 1 / 1 / -1 / 7;
   display: block;
   z-index: 10;
+  margin-left: 600px;
 
   :nth-of-type(2n+1) {
     grid-column: 7 / -1;
@@ -83,10 +84,6 @@ export const ProjectContent = styled.div`
 
 export const Content = styled.div`
   display: block;
-
-  :nth-of-type(2n+1) {
-    text-align: right;
-  }
 `;
 
 export const Overline = styled.p`
@@ -119,11 +116,9 @@ export const ProjectDescription = styled.div`
   color: ${({ theme }) => theme.secondaryColor};
   font-size: 20px;
   display: block;
-  text-align: right;
 
   p:last-child, p:last-of-type {
     margin: 0px;
-    display: block;
   }
 `;
 
@@ -135,7 +130,6 @@ export const ProjectTechList = styled.ul`
   margin: 25px 0px 10px;
   padding: 0px;
   list-style: none;
-  text-align: right;
 
   :nth-of-type(2n+1) {
     -webkit-box-pack: end;
@@ -144,8 +138,8 @@ export const ProjectTechList = styled.ul`
 `;
 
 export const TechOfList = styled.li`
-  font-family: 'Source Code Pro', sans-serif;
   color: ${({ theme }) => theme.secondaryColor};
+  font-family: 'Source Code Pro', sans-serif;
   white-space: nowrap;
   display: list-item;
   text-align: -webkit-match-parent;
@@ -162,7 +156,6 @@ export const ProjectLinks = styled.div`
   align-items: center;
   position: relative;
   margin-top: 10px;
-  text-align: right;
   list-style: none;
 
   :nth-of-type(1n+1) {
@@ -170,6 +163,7 @@ export const ProjectLinks = styled.div`
     justify-content: flex-end;
     margin-left: 0px;
     margin-right: -10px;
+    text-align: right;
   }
 
   a {
@@ -196,7 +190,7 @@ export const ProjectImage = styled.div`
   grid-area: 1 / 6 / -1 / -1;
   position: relative;
   z-index: 1;
-  display: flex;
+  display: block;
 
   :nth-of-type(2n+1) {
     grid-column: 1 / 8;
@@ -208,7 +202,9 @@ export const ProjectImage = styled.div`
     background-color: ${({ theme }) => theme.tertiaryColor};
     border-radius: 4px;
     vertical-align: middle;
-    display: flex;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     cursor: pointer;
@@ -234,7 +230,7 @@ export const ImageWrapper = styled.div`
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
-  display: flex;
+  display: inline-block;
   position: relative;
   overflow: hidden;
 
@@ -262,15 +258,15 @@ export const ImageWrapper = styled.div`
 export const ImageWrapperSon = styled.div`
   max-width: 700px;
   display: block;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
 
   img {
     max-width: 100%;
     display: block;
     position: static;
-    height: 100%;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
     overflow-clip-margin: content-box;
     overflow: clip;
 

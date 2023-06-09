@@ -101,6 +101,43 @@ export default function Portfolio() {
             </Link>
           </ProjectImage>
         </ProjectContainer>
+        <ProjectContainer>
+          <ProjectContent>
+            <>
+              <Overline>Featured Project</Overline>
+              <Link to="/#">
+                <ProjectTitle>Project 3</ProjectTitle>
+              </Link>
+              <ProjectDescription>
+                <p>Realização do projeto 3</p>
+              </ProjectDescription>
+              <ProjectTechList>
+                <TechOfList>React</TechOfList>
+                <TechOfList>Javascript</TechOfList>
+                <TechOfList>CSS</TechOfList>
+                <TechOfList>HTML</TechOfList>
+              </ProjectTechList>
+              <ProjectLinks>
+                <Link to="/#">
+                  <img src={GithubIcon} alt="Github Link" />
+                </Link>
+                <Link to="/#">
+                  <img src={ProjectLink} alt="Project Link" />
+                </Link>
+              </ProjectLinks>
+            </>
+          </ProjectContent>
+          <ProjectImage>
+            <Link to="/#">
+              <ImageWrapper>
+                <ImageWrapperSon>
+                  <img src={TransparentImage} alt="" />
+                </ImageWrapperSon>
+                <img src={ProjectImage1} alt="Project 1" />
+              </ImageWrapper>
+            </Link>
+          </ProjectImage>
+        </ProjectContainer>
       </ProjectsList>
     </Container>
   );

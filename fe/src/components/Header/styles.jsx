@@ -5,7 +5,6 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: -100px;
   z-index: 11;
   padding: 0px 50px;
   width: 100%;
@@ -15,6 +14,8 @@ export const Container = styled.header`
   filter: none;
   pointer-events: auto !important;
   user-select: auto !important;
+  transition: transform 0.3s ease-in-out;
+  transform: ${(props) => (props.visible ? 'translateY(0)' : 'translateY(-100%)')};
 `;
 
 export const Content = styled.nav`

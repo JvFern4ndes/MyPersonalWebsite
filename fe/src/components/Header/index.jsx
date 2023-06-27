@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import {
@@ -13,8 +14,24 @@ import MyLogo from '../../assets/images/MyLogo.svg';
 import Button from '../Button';
 
 export default function Header() {
+  const [isHeaderVisible, setHeaderVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isVisible = prevScrollPos > currentScrollPos;
+
+      setHeaderVisible(isVisible);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <Container>
+    <Container visible={isHeaderVisible}>
       <Content>
         <Logo tabIndex={-1}>
           <a href="/#home" aria-label="Home">

@@ -16,22 +16,26 @@ import Button from '../Button';
 export default function Header() {
   const [isHeaderVisible, setHeaderVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       const isVisible = prevScrollPos > currentScrollPos;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
+      setIsAtTop(scrollTop === 0);
       setHeaderVisible(isVisible);
       setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener('scroll', handleScroll);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
   return (
-    <Container visible={isHeaderVisible}>
+    <Container isAtTop={isAtTop} visible={isHeaderVisible}>
       <Content>
         <Logo tabIndex={-1}>
           <a href="/#home" aria-label="Home">

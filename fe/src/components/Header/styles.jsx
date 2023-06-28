@@ -16,7 +16,7 @@ export const Container = styled.header`
   user-select: auto !important;
   transition: transform 0.3s ease-in-out;
   transform: ${(props) => (props.visible ? 'translateY(0)' : 'translateY(-100%)')};
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: ${({ isAtTop }) => (isAtTop ? 'none' : '0 10px 30px -10px rgba(0, 0, 0, 0.5)')};
 `;
 
 export const Content = styled.nav`

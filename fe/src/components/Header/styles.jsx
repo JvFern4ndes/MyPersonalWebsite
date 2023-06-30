@@ -5,10 +5,12 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: ${(props) => props.top}px;
   z-index: 11;
   padding: 0px 50px;
   width: 100%;
-  height: 100px;
+  transition: height 1s ease-in-out;
+  height: ${({ isAtTop }) => (isAtTop ? '100px' : '80px')};
   background-color: #080b18CC;
   backdrop-filter: blur(10px);
   filter: none;
@@ -16,6 +18,7 @@ export const Container = styled.header`
   user-select: auto !important;
   transition: transform 0.3s ease-in-out;
   transform: ${(props) => (props.visible ? 'translateY(0)' : 'translateY(-100%)')};
+  transition: box-shadow 1s ease-in-out;
   box-shadow: ${({ isAtTop }) => (isAtTop ? 'none' : '0 10px 30px -10px rgba(0, 0, 0, 0.5)')};
 `;
 

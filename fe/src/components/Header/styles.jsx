@@ -9,17 +9,15 @@ export const Container = styled.header`
   z-index: 11;
   padding: 0px 50px;
   width: 100%;
-  transition: height 1s ease-in-out;
   height: ${({ isAtTop }) => (isAtTop ? '100px' : '80px')};
   background-color: #080b18CC;
   backdrop-filter: blur(10px);
   filter: none;
   pointer-events: auto !important;
   user-select: auto !important;
-  transition: transform 0.3s ease-in-out;
   transform: ${(props) => (props.visible ? 'translateY(0)' : 'translateY(-100%)')};
-  transition: box-shadow 1s ease-in-out;
-  box-shadow: ${({ isAtTop }) => (isAtTop ? 'none' : '0 10px 30px -10px rgba(0, 0, 0, 0.5)')};
+  box-shadow: ${({ isAtTop }) => (isAtTop ? 'none' : '0 15px 30px -8px #080A12CC')};
+  transition: all 0.5s ease-in-out;
 `;
 
 export const Content = styled.nav`

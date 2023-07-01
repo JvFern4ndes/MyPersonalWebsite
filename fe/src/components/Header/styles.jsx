@@ -16,7 +16,7 @@ export const Container = styled.header`
   pointer-events: auto !important;
   user-select: auto !important;
   transform: ${(props) => (props.visible ? 'translateY(0)' : 'translateY(-100%)')};
-  box-shadow: ${({ isAtTop }) => (isAtTop ? 'none' : '0 15px 30px -8px #080A12CC')};
+  box-shadow: ${({ isAtTop }) => (isAtTop ? 'none' : '0 15px 30px -8px rgba(5, 8, 21, 0.9)')};
   transition: all 0.5s ease-in-out;
 `;
 

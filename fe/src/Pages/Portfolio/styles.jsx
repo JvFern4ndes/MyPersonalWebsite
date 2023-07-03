@@ -52,7 +52,7 @@ export const ProjectsList = styled.ul`
 
 export const ProjectContainer = styled.li`
   position: relative;
-  display: grid;
+  display: flex;
   gap: 10px;
   -webkit-box-align: center;
   align-items: center;

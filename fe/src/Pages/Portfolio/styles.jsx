@@ -66,15 +66,9 @@ export const ProjectContainer = styled.li`
 
 export const ProjectContent = styled.div`
   position: relative;
-  grid-area: 1 / 1 / -1 / 7;
   display: block;
   z-index: 10;
   margin-left: 600px;
-
-  :nth-of-type(2n+1) {
-    grid-column: 7 / -1;
-    text-align: right;
-  }
 
   a {
     text-decoration: none;
@@ -187,14 +181,9 @@ export const ProjectLinks = styled.div`
 
 export const ProjectImage = styled.div`
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-  grid-area: 1 / 6 / -1 / -1;
   position: relative;
   z-index: 1;
   display: block;
-
-  :nth-of-type(2n+1) {
-    grid-column: 1 / 8;
-  }
 
   a {
     width: 100%;

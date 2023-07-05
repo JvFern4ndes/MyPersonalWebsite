@@ -65,10 +65,10 @@ export const ProjectContainer = styled.li`
 `;
 
 export const ProjectContent = styled.div`
-  position: relative;
+  position: absolute;
   display: block;
   z-index: 10;
-  margin-left: 600px;
+  margin-left: 1000px;
 
   a {
     text-decoration: none;
@@ -209,6 +209,10 @@ export const ProjectImage = styled.div`
       background-color: #0A192F;
       mix-blend-mode: screen;
     }
+
+    img {
+      max-width: 50%;
+    }
   }
 `;
 
@@ -245,7 +249,6 @@ export const ImageWrapper = styled.div`
 `;
 
 export const ImageWrapperSon = styled.div`
-  max-width: 700px;
   display: block;
   height: 100%;
   padding: 0;

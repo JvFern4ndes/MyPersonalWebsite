@@ -18,7 +18,6 @@ import {
   TechOfList,
   ProjectLinks,
   ProjectImage,
-  ImageWrapper,
   ImageWrapperSon,
 } from './styles';
 
@@ -30,12 +29,10 @@ export default function Portfolio() {
         <ProjectContainer>
           <ProjectImage>
             <Link to="/#">
-              <ImageWrapper>
-                <ImageWrapperSon>
-                  <img src={TransparentImage} alt="" />
-                </ImageWrapperSon>
-                <img src={ProjectImage1} alt="Project 1" />
-              </ImageWrapper>
+              <ImageWrapperSon>
+                <img src={TransparentImage} alt="" />
+              </ImageWrapperSon>
+              <img src={ProjectImage1} alt="Project 1" />
             </Link>
           </ProjectImage>
           <ProjectContent>

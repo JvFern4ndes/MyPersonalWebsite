@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 
 import GithubIcon from '../../assets/images/GithubIcon.svg';
 import ProjectLink from '../../assets/images/ProjectLink.svg';
-import TransparentImage from '../../assets/images/TransparentImage.svg';
 import ProjectImage1 from '../../assets/images/ProjectImage1.png';
 
 import {
@@ -18,7 +17,6 @@ import {
   TechOfList,
   ProjectLinks,
   ProjectImage,
-  ImageWrapperSon,
 } from './styles';
 
 export default function Portfolio() {
@@ -29,9 +27,6 @@ export default function Portfolio() {
         <ProjectContainer>
           <ProjectImage>
             <Link to="/#">
-              <ImageWrapperSon>
-                <img src={TransparentImage} alt="" />
-              </ImageWrapperSon>
               <img src={ProjectImage1} alt="Project 1" />
             </Link>
           </ProjectImage>

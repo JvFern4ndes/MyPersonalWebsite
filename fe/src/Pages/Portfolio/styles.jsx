@@ -68,7 +68,7 @@ export const ProjectContent = styled.div`
   position: absolute;
   display: block;
   z-index: 10;
-  margin-left: 1000px;
+  margin-left: 900px;
 
   a {
     text-decoration: none;
@@ -188,7 +188,7 @@ export const ProjectImage = styled.div`
   a {
     width: 100%;
     height: 100%;
-    background-color: ${({ theme }) => theme.tertiaryColor};
+    /* background-color: ${({ theme }) => theme.tertiaryColor}; */
     border-radius: 4px;
     vertical-align: middle;
     position: relative;
@@ -211,7 +211,7 @@ export const ProjectImage = styled.div`
     }
 
     img {
-      max-width: 50%;
+      max-width: 70%;
     }
   }
 `;

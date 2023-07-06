@@ -186,7 +186,7 @@ export const ProjectImage = styled.div`
   display: block;
 
   a {
-    width: 100%;
+    width: 70%;
     height: 100%;
     /* background-color: ${({ theme }) => theme.tertiaryColor}; */
     border-radius: 4px;
@@ -199,19 +199,8 @@ export const ProjectImage = styled.div`
     cursor: pointer;
     list-style: none;
 
-    ::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      inset: 0px;
-      z-index: 3;
-      background-color: #0A192F;
-      mix-blend-mode: screen;
-    }
-
     img {
-      max-width: 70%;
+      max-width: 100%;
     }
   }
 `;

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import GithubIcon from '../../assets/images/GithubIcon.svg';
 import ProjectLink from '../../assets/images/ProjectLink.svg';
-import ProjectImage1 from '../../assets/images/ProjectImage1.png';
+import MyPortfolioImage from '../../assets/images/MyPortfolioImage.jpg';
 
 import {
   Container,
@@ -27,14 +27,14 @@ export default function Portfolio() {
         <ProjectContainer>
           <ProjectImage>
             <Link to="/#">
-              <img src={ProjectImage1} alt="Project 1" />
+              <img src={MyPortfolioImage} alt="Project 1" />
             </Link>
           </ProjectImage>
           <ProjectContent>
             <Content>
               <Overline>Featured Project</Overline>
               <Link to="/#">
-                <ProjectTitle>Project 1</ProjectTitle>
+                <ProjectTitle>My Own Portfolio</ProjectTitle>
               </Link>
               <ProjectDescription>
                 <p>Realização do projeto 1</p>

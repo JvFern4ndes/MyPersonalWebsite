@@ -37,7 +37,7 @@ export default function Portfolio() {
                 <ProjectTitle>My Own Portfolio</ProjectTitle>
               </Link>
               <ProjectDescription>
-                <p>Realização do projeto 1</p>
+                <p>Development of my personal portfolio through javascript and ReactJs.</p>
               </ProjectDescription>
               <ProjectTechList>
                 <TechOfList>React</TechOfList>

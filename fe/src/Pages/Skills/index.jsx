@@ -46,7 +46,7 @@ export default function Skills() {
               </CardTitle>
               <TechnologieDescription>
                 <p>
-                  JavaScript é uma linguagem de programação para web que adiciona interatividade e funcionalidade a páginas. É usado para criar animações, validar dados, interagir com o usuário e construir aplicativos da web complexos.
+                  JavaScript is a web programming language that adds interactivity and functionality to pages. It is used to create animations, validate data, interact with the user and build complex web applications.
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
@@ -71,7 +71,7 @@ export default function Skills() {
               </CardTitle>
               <TechnologieDescription>
                 <p>
-                  Biblioteca JavaScript para construir interfaces de usuário interativas e reutilizáveis.
+                  JavaScript library for building interactive and reusable user interfaces.
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
@@ -96,7 +96,7 @@ export default function Skills() {
               </CardTitle>
               <TechnologieDescription>
                 <p>
-                  Framework JavaScript para desenvolvimento de aplicativos móveis multiplataforma, permitindo criar apps nativos para iOS e Android com uma base de código compartilhada.
+                  JavaScript framework for cross-platform mobile app development, allowing you to create native apps for iOS and Android with a shared code base.
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
@@ -121,7 +121,7 @@ export default function Skills() {
               </CardTitle>
               <TechnologieDescription>
                 <p>
-                  Ambiente de execução JavaScript do lado do servidor, permitindo a construção de aplicativos escaláveis e de alta performance com JavaScript no backend.
+                  Server-side JavaScript runtime, allowing you to build scalable, high-performance applications with JavaScript on the backend.
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
@@ -146,7 +146,7 @@ export default function Skills() {
               </CardTitle>
               <TechnologieDescription>
                 <p>
-                  Banco de dados NoSQL orientado a documentos, altamente escalável e flexível, adequado para armazenar grandes volumes de dados não estruturados.
+                  Document-oriented NoSQL database, highly scalable and flexible, suitable for storing large volumes of unstructured data.
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
@@ -171,7 +171,7 @@ export default function Skills() {
               </CardTitle>
               <TechnologieDescription>
                 <p>
-                  Plataforma de gerenciamento de conteúdo (CMS) baseada em PHP, amplamente utilizada para criar sites e blogs, com uma interface amigável e uma ampla variedade de temas e plugins disponíveis.
+                  PHP-based content management platform (CMS), widely used to create websites and blogs, with a user-friendly interface and a wide range of themes and plugins available.
                 </p>
               </TechnologieDescription>
             </CardContentHeader>

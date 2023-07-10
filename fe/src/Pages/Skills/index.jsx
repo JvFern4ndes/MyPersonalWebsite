@@ -50,7 +50,7 @@ export default function Skills() {
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
-            <CardFooter><p>Não disponível</p></CardFooter>
+            <CardFooter><p>Not available</p></CardFooter>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -75,7 +75,7 @@ export default function Skills() {
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
-            <CardFooter><p>Não disponível</p></CardFooter>
+            <CardFooter><p>Not available</p></CardFooter>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -100,7 +100,7 @@ export default function Skills() {
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
-            <CardFooter><p>Não disponível</p></CardFooter>
+            <CardFooter><p>Not available</p></CardFooter>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -125,7 +125,7 @@ export default function Skills() {
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
-            <CardFooter><p>Não disponível</p></CardFooter>
+            <CardFooter><p>Not available</p></CardFooter>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -150,7 +150,7 @@ export default function Skills() {
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
-            <CardFooter><p>Não disponível</p></CardFooter>
+            <CardFooter><p>Not available</p></CardFooter>
           </CardContent>
         </TechnologieCard>
         <TechnologieCard>
@@ -175,7 +175,7 @@ export default function Skills() {
                 </p>
               </TechnologieDescription>
             </CardContentHeader>
-            <CardFooter><p>Não disponível</p></CardFooter>
+            <CardFooter><p>Not available</p></CardFooter>
           </CardContent>
         </TechnologieCard>
       </TechnologiesGrid>

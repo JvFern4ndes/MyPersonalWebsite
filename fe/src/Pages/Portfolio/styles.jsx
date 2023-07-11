@@ -77,7 +77,10 @@ export const ProjectContent = styled.div`
 `;
 
 export const Content = styled.div`
-  display: block;
+  display: flex;
+  margin-left: -70px;
+  flex-direction: column;
+  align-items: flex-end;
 `;
 
 export const Overline = styled.p`

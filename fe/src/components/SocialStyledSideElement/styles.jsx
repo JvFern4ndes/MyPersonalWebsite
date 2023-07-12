@@ -47,6 +47,10 @@ export const Content = styled.ul`
     :hover {
       transform: translateY(-5px);
     }
+
+    svg:hover path {
+      fill: white;
+    }
   }
 
   ::after {

@@ -203,6 +203,16 @@ export const ProjectImage = styled.div`
     cursor: pointer;
     list-style: none;
 
+    :after {
+      content:'';
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      background-color:#5ed3f3;
+    }
+
     img {
       max-width: 100%;
     }

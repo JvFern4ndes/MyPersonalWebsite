@@ -113,6 +113,7 @@ export const ProjectDescription = styled.div`
   color: ${({ theme }) => theme.secondaryColor};
   font-size: 20px;
   display: block;
+  text-align: right;
 
   p:last-child, p:last-of-type {
     margin: 0px;

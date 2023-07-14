@@ -187,7 +187,7 @@ export const ProjectImage = styled.div`
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   position: relative;
   z-index: 1;
-  display: block;
+  display: inline-block;
 
   a {
     width: 70%;
@@ -203,19 +203,24 @@ export const ProjectImage = styled.div`
     cursor: pointer;
     list-style: none;
 
-    :after {
-      content:'';
-      position:absolute;
-      top:0;
-      bottom:0;
-      left:0;
-      right:0;
-      background-color:#5ed3f3;
-    }
-
     img {
       max-width: 100%;
     }
+  }
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.tertiaryColor};
+  opacity: 0.5;
+  transition: ease-in-out 0.5s;
+
+  :hover {
+    opacity: 0;
   }
 `;
 

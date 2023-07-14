@@ -17,6 +17,7 @@ import {
   TechOfList,
   ProjectLinks,
   ProjectImage,
+  Overlay,
 } from './styles';
 
 export default function Portfolio() {
@@ -28,6 +29,7 @@ export default function Portfolio() {
           <ProjectImage>
             <Link to="/#">
               <img src={MyPortfolioImage} alt="Project 1" />
+              <Overlay />
             </Link>
           </ProjectImage>
           <ProjectContent>

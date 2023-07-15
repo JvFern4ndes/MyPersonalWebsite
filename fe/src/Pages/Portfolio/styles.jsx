@@ -71,8 +71,7 @@ export const ProjectContainer = styled.li`
     position: relative;
     border-radius: 4px;
     mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+
   }
 `;
 
@@ -195,96 +194,48 @@ export const ProjectLinks = styled.div`
   }
 `;
 
-export const ProjectImage = styled.div`
+export const Picture = styled.div`
   position: relative;
-  z-index: 1;
+  max-width: 100%;
   display: block;
-
-  a {
-    width: 70%;
-    height: 100%;
-    /* background-color: ${({ theme }) => theme.tertiaryColor}; */
-    border-radius: 4px;
-    vertical-align: middle;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    cursor: pointer;
-    list-style: none;
-
-    img {
-      max-width: 100%;
-      display: block;
-      position: static;
-    }
-  }
 `;
 
-export const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+export const Wrapper = styled.div`
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  display: block;
+  position: relative;
   width: 100%;
-  height: 100%;
+  border-radius: 4px;
   background-color: ${({ theme }) => theme.tertiaryColor};
-  opacity: 0.5;
-  transition: ease-in-out 0.5s;
-
-  :hover {
-    opacity: 0;
-  }
 `;
 
 export const ImageWrapper = styled.div`
-  border-radius: 4px;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1) brightness(90%);
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
-  position: relative;
   overflow: hidden;
 
   img {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    max-width: none;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    vertical-align: middle;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-
-    [alt=""] {
-      filter: blur(5px);
-    }
+    position: relative;
+    border-radius: 4px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   }
 `;
 
-export const ImageWrapperSon = styled.div`
-  display: block;
-  height: 100%;
-  padding: 0;
-  width: 100%;
-  object-fit: cover;
+export const ImageContainer = styled.div`
+  width: 70%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
 
   img {
     max-width: 100%;
     display: block;
-    position: static;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-
-    [alt=""] {
-      filter: blur(5px);
-    }
+    position: relative;
   }
 `;

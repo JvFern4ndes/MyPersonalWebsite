@@ -16,8 +16,10 @@ import {
   ProjectTechList,
   TechOfList,
   ProjectLinks,
-  ProjectImage,
-  Overlay,
+  Picture,
+  Wrapper,
+  ImageWrapper,
+  ImageContainer,
 } from './styles';
 
 export default function Portfolio() {
@@ -26,12 +28,17 @@ export default function Portfolio() {
       <Title>Some Things I&apos;ve Built</Title>
       <ProjectsList>
         <ProjectContainer>
-          <ProjectImage>
-            <Link to="/#">
-              <img src={MyPortfolioImage} alt="Project 1" />
-              <Overlay />
-            </Link>
-          </ProjectImage>
+          <Picture>
+            <Wrapper>
+              <ImageWrapper>
+                <ImageContainer>
+                  <Link to="/#">
+                    <img src={MyPortfolioImage} alt="Project 1" />
+                  </Link>
+                </ImageContainer>
+              </ImageWrapper>
+            </Wrapper>
+          </Picture>
           <ProjectContent>
             <Content>
               <Overline>Featured Project</Overline>

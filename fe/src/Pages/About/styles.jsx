@@ -172,7 +172,7 @@ export const ImageContainer = styled.div`
   max-width: 500px;
   display: block;
 
-  img{
+  img {
     max-width: 100%;
     display: block;
     position: static;

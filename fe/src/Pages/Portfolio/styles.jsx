@@ -51,6 +51,9 @@ export const ProjectsList = styled.ul`
 `;
 
 export const ProjectContainer = styled.li`
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
   position: relative;
   display: flex;
   gap: 10px;
@@ -58,9 +61,18 @@ export const ProjectContainer = styled.li`
   align-items: center;
   text-align: -webkit-match-parent;
   list-style: none;
+  overflow: hidden;
 
   :not(:last-of-type) {
     margin-bottom: 100px;
+  }
+
+  img{
+    position: relative;
+    border-radius: 4px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   }
 `;
 
@@ -184,10 +196,9 @@ export const ProjectLinks = styled.div`
 `;
 
 export const ProjectImage = styled.div`
-  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   position: relative;
   z-index: 1;
-  display: inline-block;
+  display: block;
 
   a {
     width: 70%;
@@ -205,6 +216,8 @@ export const ProjectImage = styled.div`
 
     img {
       max-width: 100%;
+      display: block;
+      position: static;
     }
   }
 `;

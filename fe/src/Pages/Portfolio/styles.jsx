@@ -202,12 +202,11 @@ export const Picture = styled.div`
 
 export const Wrapper = styled.div`
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   display: block;
   position: relative;
   width: 100%;
   border-radius: 4px;
-  background-color: ${({ theme }) => theme.tertiaryColor};
+  background-color: transparent;
 `;
 
 export const ImageWrapper = styled.div`
@@ -217,13 +216,12 @@ export const ImageWrapper = styled.div`
   display: inline-block;
   overflow: hidden;
 
-  img {
+  /* img {
     position: relative;
     border-radius: 4px;
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-  }
+  } */
 `;
 
 export const ImageContainer = styled.div`
@@ -237,5 +235,21 @@ export const ImageContainer = styled.div`
     max-width: 100%;
     display: block;
     position: relative;
+  }
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.tertiaryColor};
+  opacity: 0.5;
+  filter: hue-rotate(0deg); /* Aplica o filtro de escala de azul */
+  transition: opacity 0.3s ease-in-out;
+
+  :hover {
+    opacity: 0;
   }
 `;

@@ -216,12 +216,12 @@ export const ImageWrapper = styled.div`
   display: inline-block;
   overflow: hidden;
 
-  /* img {
+  img {
     position: relative;
     border-radius: 4px;
-    mix-blend-mode: multiply;
+    mix-blend-mode: normal;
     filter: grayscale(100%) contrast(1);
-  } */
+  }
 `;
 
 export const ImageContainer = styled.div`

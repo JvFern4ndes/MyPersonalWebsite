@@ -220,7 +220,6 @@ export const ImageWrapper = styled.div`
     position: relative;
     border-radius: 4px;
     mix-blend-mode: normal;
-    filter: grayscale(100%) contrast(1);
   }
 `;
 
@@ -242,12 +241,12 @@ export const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
   background-color: ${({ theme }) => theme.tertiaryColor};
   opacity: 0.5;
   filter: hue-rotate(0deg); /* Aplica o filtro de escala de azul */
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 
   :hover {
     opacity: 0;

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  -webkit-box-align: center;
   align-items: center;
   margin: 0px auto;
   padding: 100px 0px;
@@ -12,7 +11,6 @@ export const Container = styled.section`
 
 export const Title = styled.h2`
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   position: relative;
   margin: 10px 0px 40px;
@@ -46,7 +44,7 @@ export const Title = styled.h2`
 
 export const ProjectsList = styled.ul`
   list-style: none;
-  padding: 0px;
+  padding: 50px 0px;
   margin: 0px;
 `;
 
@@ -64,14 +62,11 @@ export const ProjectContainer = styled.li`
   overflow: hidden;
 
   :not(:last-of-type) {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   img{
     position: relative;
-    border-radius: 4px;
-    mix-blend-mode: multiply;
-
   }
 `;
 
@@ -92,6 +87,7 @@ export const Content = styled.div`
   margin-left: -70px;
   flex-direction: column;
   align-items: flex-end;
+  gap: 10px;
 `;
 
 export const Overline = styled.p`
@@ -103,7 +99,7 @@ export const Overline = styled.p`
 `;
 
 export const ProjectTitle = styled.h3`
-  margin: 0px 0px 20px;
+  margin: -10px 0px 25px;
   font-size: 32px;
   font-weight: 600;
   line-height: 1.1;
@@ -139,11 +135,6 @@ export const ProjectTechList = styled.ul`
   margin: 25px 0px 10px;
   padding: 0px;
   list-style: none;
-
-  :nth-of-type(2n+1) {
-    -webkit-box-pack: end;
-    justify-content: flex-end;
-  }
 `;
 
 export const TechOfList = styled.li`
@@ -218,8 +209,6 @@ export const ImageWrapper = styled.div`
 
   img {
     position: relative;
-    border-radius: 4px;
-    mix-blend-mode: normal;
   }
 `;
 
@@ -244,8 +233,107 @@ export const Overlay = styled.div`
   width: 70%;
   height: 100%;
   background-color: ${({ theme }) => theme.tertiaryColor};
-  opacity: 0.5;
-  filter: hue-rotate(0deg); /* Aplica o filtro de escala de azul */
+  opacity: 0.3;
+  transition: opacity 0.7s ease-in-out;
+
+  :hover {
+    opacity: 0;
+  }
+`;
+
+// Segunda versão dos Projetos
+
+export const ProjectContent2 = styled.div`
+  position: absolute;
+  display: block;
+  z-index: 10;
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.color};
+  }
+`;
+
+export const Content2 = styled.div`
+  display: flex;
+  margin-right: 850px;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const ProjectDescription2 = styled.div`
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.backgroundColorLight};
+  color: ${({ theme }) => theme.secondaryColor};
+  font-size: 20px;
+  display: block;
+
+  p:last-child, p:last-of-type {
+    margin: 0px;
+  }
+`;
+
+export const ProjectTechList2 = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px -20px;
+  padding: 0px;
+  list-style: none;
+`;
+
+export const ProjectLinks2 = styled.div`
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  list-style: none;
+
+  :nth-of-type(1n+1) {
+    margin-left: 0px;
+    margin-right: -10px;
+  }
+
+  a {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0 15px 0 0;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    cursor: pointer;
+  }
+
+  img {
+    width: 24px;
+  }
+`;
+
+export const Picture2 = styled.div`
+  position: relative;
+  max-width: 100%;
+  display: block;
+  text-align: right;
+`;
+
+export const Overlay2 = styled.div`
+  position: absolute;
+  top: 0;
+  margin-right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.tertiaryColor};
+  opacity: 0.3;
   transition: opacity 0.7s ease-in-out;
 
   :hover {

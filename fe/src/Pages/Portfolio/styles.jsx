@@ -256,7 +256,7 @@ export const ProjectContent2 = styled.div`
 
 export const Content2 = styled.div`
   display: flex;
-  margin-right: 850px;
+  max-width: 70%;
   flex-direction: column;
   gap: 10px;
 `;
@@ -320,7 +320,7 @@ export const ProjectLinks2 = styled.div`
 `;
 
 export const Picture2 = styled.div`
-  position: relative;
+  /* position: relative; */
   max-width: 100%;
   display: block;
   text-align: right;

@@ -95,7 +95,7 @@ export default function Portfolio() {
             <Content2>
               <Overline>Featured Project</Overline>
               <Link to="/#">
-                <ProjectTitle>My Own Portfolio</ProjectTitle>
+                <ProjectTitle>WaiterApp</ProjectTitle>
               </Link>
               <ProjectDescription2>
                 <p>Development of my personal portfolio through javascript and ReactJs.</p>
@@ -134,7 +134,7 @@ export default function Portfolio() {
             <Content>
               <Overline>Featured Project</Overline>
               <Link to="/#">
-                <ProjectTitle>My Own Portfolio</ProjectTitle>
+                <ProjectTitle>My Contacts</ProjectTitle>
               </Link>
               <ProjectDescription>
                 <p>Development of my personal portfolio through javascript and ReactJs.</p>
@@ -173,7 +173,7 @@ export default function Portfolio() {
             <Content2>
               <Overline>Featured Project</Overline>
               <Link to="/#">
-                <ProjectTitle>My Own Portfolio</ProjectTitle>
+                <ProjectTitle>Tailwind Spotify</ProjectTitle>
               </Link>
               <ProjectDescription2>
                 <p>Development of my personal portfolio through javascript and ReactJs.</p>
@@ -212,7 +212,7 @@ export default function Portfolio() {
             <Content>
               <Overline>Featured Project</Overline>
               <Link to="/#">
-                <ProjectTitle>My Own Portfolio</ProjectTitle>
+                <ProjectTitle>Financial Controll App</ProjectTitle>
               </Link>
               <ProjectDescription>
                 <p>Development of my personal portfolio through javascript and ReactJs.</p>

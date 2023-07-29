@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Link } from 'react-router-dom';
 
 import GithubIcon from '../../assets/images/GithubIcon.svg';
@@ -137,13 +138,13 @@ export default function Portfolio() {
                 <ProjectTitle>My Contacts</ProjectTitle>
               </Link>
               <ProjectDescription>
-                <p>Development of my personal portfolio through javascript and ReactJs.</p>
+                <p>In this project, I developed a contact management application, from the REST API (contact CRUD) to the interface responsible for communicating with this API.</p>
               </ProjectDescription>
               <ProjectTechList>
                 <TechOfList>React</TechOfList>
+                <TechOfList>NodeJs</TechOfList>
+                <TechOfList>PostgreSQL</TechOfList>
                 <TechOfList>Javascript</TechOfList>
-                <TechOfList>CSS</TechOfList>
-                <TechOfList>HTML</TechOfList>
               </ProjectTechList>
               <ProjectLinks>
                 <Link to="/#">

@@ -99,7 +99,7 @@ export default function Portfolio() {
                 <ProjectTitle>Waiter App</ProjectTitle>
               </Link>
               <ProjectDescription2>
-                <p>Development of my personal portfolio through javascript and ReactJs.</p>
+                <p>trata-se de uma aplicação web e mobile para restaurantes, sendo responsável por facilitar o trabalho dos garçons. O app conta entre outras funcionalidades, com a listagem dos produtos do cardápio por categoria, modais, carrinho de compras e um dashboard com real time através de WebSockets.</p>
               </ProjectDescription2>
               <ProjectTechList2>
                 <TechOfList>React</TechOfList>

@@ -99,7 +99,7 @@ export default function Portfolio() {
                 <ProjectTitle>Waiter App</ProjectTitle>
               </Link>
               <ProjectDescription2>
-                <p>trata-se de uma aplicação web e mobile para restaurantes, sendo responsável por facilitar o trabalho dos garçons. O app conta entre outras funcionalidades, com a listagem dos produtos do cardápio por categoria, modais, carrinho de compras e um dashboard com real time através de WebSockets.</p>
+                <p>It is a web and mobile application for restaurants, being responsible for facilitating the work of waiters. The app has, among other features, a list of products on the menu by category, modes, shopping cart and a dashboard with real time through WebSockets.</p>
               </ProjectDescription2>
               <ProjectTechList2>
                 <TechOfList>React</TechOfList>
@@ -177,7 +177,10 @@ export default function Portfolio() {
                 <ProjectTitle>Tailwind Spotify</ProjectTitle>
               </Link>
               <ProjectDescription2>
-                <p>Development of my personal portfolio through javascript and ReactJs.</p>
+                <p>
+                  Development of a project that is a version similar to the Spotify interface.
+                  The purpose was to use two new tools for me: Tailwind and Next.js.
+                </p>
               </ProjectDescription2>
               <ProjectTechList2>
                 <TechOfList>React</TechOfList>

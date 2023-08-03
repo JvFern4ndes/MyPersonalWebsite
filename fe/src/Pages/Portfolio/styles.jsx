@@ -60,6 +60,7 @@ export const ProjectContainer = styled.li`
   text-align: -webkit-match-parent;
   list-style: none;
   overflow: hidden;
+  height: 500px;
 
   :not(:last-of-type) {
     margin-bottom: 150px;
@@ -75,6 +76,7 @@ export const ProjectContent = styled.div`
   display: block;
   z-index: 10;
   margin-left: 900px;
+  align-items: center;
 
   a {
     text-decoration: none;
@@ -256,7 +258,7 @@ export const ProjectContent2 = styled.div`
 
 export const Content2 = styled.div`
   display: flex;
-  max-width: 70%;
+  max-width: 33%;
   flex-direction: column;
   gap: 10px;
 `;

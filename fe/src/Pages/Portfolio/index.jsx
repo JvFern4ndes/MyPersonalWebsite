@@ -60,7 +60,7 @@ export default function Portfolio() {
                 <ProjectTitle>My Own Portfolio</ProjectTitle>
               </Link>
               <ProjectDescription>
-                <p>Development of my personal portfolio through javascript and ReactJs.</p>
+                <p>My personal portfolio, where I seek to showcase my professional qualifications through a selected set of work carried out.</p>
               </ProjectDescription>
               <ProjectTechList>
                 <TechOfList>React</TechOfList>
@@ -103,9 +103,9 @@ export default function Portfolio() {
               </ProjectDescription2>
               <ProjectTechList2>
                 <TechOfList>React</TechOfList>
-                <TechOfList>Javascript</TechOfList>
-                <TechOfList>CSS</TechOfList>
-                <TechOfList>HTML</TechOfList>
+                <TechOfList>Express</TechOfList>
+                <TechOfList>Typescript</TechOfList>
+                <TechOfList>MongoDB</TechOfList>
               </ProjectTechList2>
               <ProjectLinks2>
                 <Link to="/#">
@@ -184,9 +184,9 @@ export default function Portfolio() {
               </ProjectDescription2>
               <ProjectTechList2>
                 <TechOfList>React</TechOfList>
+                <TechOfList>Tailwind</TechOfList>
+                <TechOfList>Next.Js</TechOfList>
                 <TechOfList>Javascript</TechOfList>
-                <TechOfList>CSS</TechOfList>
-                <TechOfList>HTML</TechOfList>
               </ProjectTechList2>
               <ProjectLinks2>
                 <Link to="/#">
@@ -219,7 +219,7 @@ export default function Portfolio() {
                 <ProjectTitle>Financial Control App</ProjectTitle>
               </Link>
               <ProjectDescription>
-                <p>Development of my personal portfolio through javascript and ReactJs.</p>
+                <p>I usually pay a lot of attention to my financial goals, so I decided to combine the useful with the pleasant, and I developed this financial control web application, it is a very simple application, where I basically used react and a little bit of programming logic.</p>
               </ProjectDescription>
               <ProjectTechList>
                 <TechOfList>React</TechOfList>

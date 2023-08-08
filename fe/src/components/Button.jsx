@@ -13,13 +13,6 @@ export default styled.button`
   transition: color 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
 
-  :hover {
-    background: ${({ theme }) => theme.tertiaryColor};
-    border: 1px solid ${({ theme }) => theme.backgroundColor};
-    color: ${({ theme }) => theme.backgroundColor};
-    transform: scale(1.2);
-  }
-
   :active {
     background: ${({ theme }) => theme.tertiaryColorActive};
   }

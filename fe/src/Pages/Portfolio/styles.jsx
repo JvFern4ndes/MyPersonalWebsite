@@ -89,6 +89,7 @@ export const Content = styled.div`
   margin-left: -70px;
   flex-direction: column;
   align-items: flex-end;
+  height: 500px;
   gap: 10px;
 `;
 

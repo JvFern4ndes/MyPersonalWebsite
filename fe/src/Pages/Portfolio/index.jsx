@@ -144,7 +144,6 @@ export default function Portfolio() {
                 <TechOfList>React</TechOfList>
                 <TechOfList>NodeJs</TechOfList>
                 <TechOfList>PostgreSQL</TechOfList>
-                <TechOfList>Javascript</TechOfList>
               </ProjectTechList>
               <ProjectLinks>
                 <Link to="/#">

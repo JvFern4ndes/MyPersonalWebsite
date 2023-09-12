@@ -1,5 +1,5 @@
 export default function InitialAnimation() {
   return (
-    <Hello>Teste</Hello>
+    <Hello>Teste 2</Hello>
   );
 }
